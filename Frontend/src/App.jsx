@@ -1,14 +1,17 @@
 import React from "react";
-import { Header, Footer, About, Skills, Testimonial } from "./Container";
-// import "./App.scss";
+import { Header, Footer, About, Skills, Testimonial, Work } from "./Container";
+import { Navbar } from "./Components";
+import "./index.css";
 const App = () => {
   return (
-    <div>
+    <div className="app">
+      <Navbar />
       <Header />
       <About />
       <Skills />
       <Testimonial />
       <Footer />
+      <Work />
     </div>
   );
 };
