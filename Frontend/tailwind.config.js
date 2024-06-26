@@ -12,6 +12,9 @@ export default {
         "cu-brown": "#46364a",
         "cu-white": "#ffffff",
       },
+      backgroundImage: {
+        menuBg: "url(/src/Assets/bgWhite.png)",
+      },
     },
   },
   plugins: [],
