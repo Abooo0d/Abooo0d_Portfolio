@@ -1,4 +1,3 @@
-import React from "react";
 import { Header, Footer, About, Skills, Testimonial, Work } from "./Container";
 import { Navbar } from "./Components";
 import "./index.css";
