@@ -4,13 +4,13 @@ import "./index.css";
 const App = () => {
   return (
     <div className="app">
-      <Navbar />
+       <Navbar /> 
       <Header />
-      <About />
-      <Skills />
-      <Testimonial />
-      <Footer />
-      <Work />
+      {/*<About />*/}
+      {/*<Skills />*/}
+      {/*<Testimonial />*/}
+      {/*<Footer />*/}
+      {/*<Work />*/}
     </div>
   );
 };

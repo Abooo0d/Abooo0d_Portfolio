@@ -45,7 +45,10 @@
     @apply flex justify-center items-center;
   }
   .p-text {
-    @apply text-sm text-left text-cu-gray  xl:text-3xl;
+    @apply text-sm text-cu-gray  xl:text-xl;
+  }
+  .head-text {
+    @apply text-3xl font-bold text-center text-black uppercase;
   }
 }
 
@@ -72,26 +75,6 @@
   p {
     text-transform: uppercase;
     color: var(--black-color);
-  }
-}
-
-.head-text {
-  font-size: 2.75rem;
-  font-weight: 800;
-  text-align: center;
-  color: var(--black-color);
-  text-transform: capitalize;
-
-  span {
-    color: var(--secondary-color);
-  }
-
-  @media screen and (min-width: 2000px) {
-    font-size: 4rem;
-  }
-
-  @media screen and (max-width: 450px) {
-    font-size: 2rem;
   }
 }
 
