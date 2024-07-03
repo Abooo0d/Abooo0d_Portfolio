@@ -55,62 +55,72 @@ const Header = () => {
           className={"overlay-circle max-[767px]:w-[80%] max-[767px]:mx-auto"}
           alt={'profile-circle'}
         />
-        <img src={images.profile} className={'absolute -top-10 left-0 max-[767px]:left-[50%] max-[767px]:translate-x-[-50%] z-0 max-w-full max-[767px]:mx-auto max-[767px]:w-[80%] '} alt="profile"/>
+        <img src={images.profile} className={'absolute -top-10 left-[50%] translate-x-[-50%] max-[767px]:left-[50%] max-[767px]:translate-x-[-50%] z-0 max-w-full max-[767px]:mx-auto max-[767px]:w-[80%] '} alt="profile"/>
       </motion.div>
-      <div className={"md:flex md:flex-col md:flex-[0.60] mt-24 md:mt-0 justify-center items-center md:gap-3 grid grid-cols-3 gap-x-12 gap-y-4 md:ml-14"}>
+      <div
+        className={"flex flex-row md:flex-col justify-center items-start flex-wrap md:flex-[0.60] mt-20 xs:mt-28  md:mt-0 gap-x-[20px] md:gap-3 md:ml-14 xs:gap-y-2"}>
+        {/*grid grid-cols-3 gap-x-12 gap-y-4*/}
         <motion.div
           variants={scaleVariants}
           whileInView={scaleVariants.whileInView}
-          className="app__header-circles h-[100%] flex justify-center md:justify-start flex-1 md:w-[100%]"
+          className="skills__con"
         >
-          <div className="circle-cmp app__flex w-[80px] h-[80px] md:w-[80px] md:h-[80px] rounded-full bg-indigo-900 duration-300 hover:scale-110 hover:shadow-[0px_0px_20px_4px_#312e81] md:ml-2">
+          <div
+            className="skills__circle w-[80px] h-[80px] md:mx-2 bg-indigo-900 hover:shadow-[0px_0px_20px_4px_#312e81] ">
             <FaPhp className='w-[60%] h-[60%] text-cu-white'/>
           </div>
         </motion.div>
+
         <motion.div
           variants={scaleVariants}
           whileInView={scaleVariants.whileInView}
-          className="app__header-circles h-[100%] flex justify-center md:justify-start flex-1 md:w-[100%]"
+          className="skills__con"
         >
-          <div className="circle-cmp app__flex w-[80px] h-[80px] md:w-[95px] md:h-[95px] rounded-full shadow-md bg-red-700 mx-12 max-[767px]:mx-0 duration-300 hover:scale-110 hover:shadow-[0px_0px_20px_4px_#b91c1c]">
-            <FaLaravel className='w-[60%] h-[60%] text-cu-white'/>
-          </div>
-        </motion.div>
-        <motion.div
-          variants={scaleVariants}
-          whileInView={scaleVariants.whileInView}
-          className="app__header-circles h-[100%] flex justify-center md:justify-start w-[100%] md:w-[100%]"
-        >
-          <div className="circle-cmp app__flex w-[80px] h-[80px] md:w-[120px] md:h-[120px] rounded-full bg-blue-400 mx-14 max-[767px]:mx-0 duration-300 hover:scale-110 hover:shadow-[0px_0px_20px_4px_#60a5fa]">
+          <div
+            className="skills__circle md:w-[120px] md:h-[120px] mt-[20px] xs:mt-4 md:mt-0 md:mx-14 bg-blue-400 hover:shadow-[0px_0px_20px_4px_#60a5fa]">
             <FaReact className='w-[60%] h-[60%] text-cu-white'/>
           </div>
         </motion.div>
         <motion.div
           variants={scaleVariants}
           whileInView={scaleVariants.whileInView}
-          className="app__header-circles h-[100%] flex justify-center md:justify-start flex-1 md:w-[100%]" 
+          className="skills__con"
         >
-          <div className="circle-cmp app__flex w-[80px] h-[80px] md:w-[95px] md:h-[95px] rounded-full shadow-md bg-amber-400 mx-12 max-[767px]:mx-0 duration-300 hover:scale-110 hover:shadow-[0px_0px_20px_4px_#fbbf24]">
+          <div className="skills__circle md:w-[95px] md:h-[95px] xs:mt-4 md:mt-0 bg-red-700 md:mx-12 hover:shadow-[0px_0px_20px_4px_#b91c1c]">
+            <FaLaravel className='w-[60%] h-[60%] text-cu-white'/>
+          </div>
+        </motion.div>
+        <motion.div
+          variants={scaleVariants}
+          whileInView={scaleVariants.whileInView}
+          className="skills__con"
+        >
+          <div
+            className="skills__circle md:w-[95px] md:h-[95px] -mt-[30px] xs:mt-0 md:mx-8 md:mt-0 bg-amber-400 hover:shadow-[0px_0px_20px_4px_#fbbf24]">
             <DiJavascript1 className='w-[60%] h-[60%] text-cu-white'/>
           </div>
         </motion.div>
         <motion.div
           variants={scaleVariants}
           whileInView={scaleVariants.whileInView}
-          className="app__header-circles h-[100%] flex justify-center md:justify-start flex-1 md:w-[100%]"
+          className="skills__con"
         >
-          <div className="circle-cmp app__flex w-[80px] h-[80px] md:w-[80px] md:h-[80px] md:ml-4 rounded-full bg-sky-500 shadow-md duration-300 hover:scale-110 hover:shadow-[0px_0px_20px_4px_#0ea5e9]">
-            <RiTailwindCssFill className='w-[60%] h-[60%] text-cu-white'/>
-          </div>
-        </motion.div> <motion.div
-          variants={scaleVariants}
-          whileInView={scaleVariants.whileInView}
-          className="app__header-circles h-[100%] flex justify-center md:justify-start flex-1 md:w-[100%]"
-        >
-          <div className="circle-cmp app__flex w-[80px] h-[80px] md:w-[70px] md:h-[70px] rounded-full bg-pink-500 shadow-md duration-300 hover:scale-110 hover:shadow-[0px_0px_20px_4px_#ec4899] md:-ml-6">
+          <div
+            className="skills__circle md:w-[80px] md:h-[80px] mt-[20px] xs:mt-4 md:-mx-0 md:mt-0 bg-pink-500 hover:shadow-[0px_0px_20px_4px_#ec4899]">
             <FaSass className='w-[60%] h-[60%] text-cu-white'/>
           </div>
         </motion.div>
+        <motion.div
+          variants={scaleVariants}
+          whileInView={scaleVariants.whileInView}
+          className="skills__con"
+        >
+          <div
+            className="skills__circle md:w-[70px] md:h-[70px] -mt-[20px] xs:mt-4 md:-mx-8 md:mt-0 bg-sky-500 hover:shadow-[0px_0px_20px_4px_#0ea5e9]">
+            <RiTailwindCssFill className='w-[60%] h-[60%] text-cu-white'/>
+          </div>
+        </motion.div>
+
       </div>
     </div>
   );

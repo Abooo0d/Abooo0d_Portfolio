@@ -6,11 +6,11 @@ const App = () => {
     <div className="app">
        <Navbar /> 
       <Header />
-      {/*<About />*/}
-      {/*<Skills />*/}
-      {/*<Testimonial />*/}
-      {/*<Footer />*/}
-      {/*<Work />*/}
+      <About />
+      <Skills />
+      <Testimonial />
+      <Footer />
+      <Work />
     </div>
   );
 };
