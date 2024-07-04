@@ -18,7 +18,7 @@ import sass from "../Assets/sass.png";
 import typescript from "../Assets/typescript.png";
 import vue from "../Assets/vue.png";
 import laravel from "../Assets/laravel.png";
-
+import Abood from '../Assets/AboodLogo.png';
 import about01 from "../Assets/about01.png";
 import about02 from "../Assets/about02.png";
 import about03 from "../Assets/about03.png";
@@ -71,4 +71,5 @@ export default {
   nb,
   skype,
   spotify,
+  Abood
 };

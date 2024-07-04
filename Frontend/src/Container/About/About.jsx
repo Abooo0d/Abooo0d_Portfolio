@@ -1,38 +1,30 @@
 import {useState,useEffect} from "react";
-import {motion} from 'framer-motion';
-import images from '../../Constants/images.js'
+import {client} from "../../client.js";
+import AboutCard from "../../Components/AboutCard.jsx";
+import {AppWrap} from "../../Wrapper/index.js";
+
 const About = () => {
-    const about=[
-      {title:'Frontend Developer',desc:'I Am Good Frontend Developer',imageUrl:images.about01},
-      {title:'Backend Developer',desc:'I Am Good Backend Developer',imageUrl:images.about02},
-      {title:'Full Stack Developer',desc:'I Am Good Full Stack Developer',imageUrl:images.about03},
-      {title:'Mobile Developer',desc:'I Am Good Mobile Developer',imageUrl:images.about04},
-    ]
+  const [about, setAbout] = useState([])
+  useEffect(() => {
+    const query = '*[_type == "abouts"]'; 
+    client.fetch(query).then((data)=> setAbout(data));
+  },[] );
   return(
-    <div className={'flex flex-col w-full'}>
-      <h2 className={'head-text'}>I know That
-        <span className={'text-purple-600'}>Good Design</span>
+    <div className={'flex flex-col w-full md:mt-4 pt-8 bg-aboutBg bg-cover bg-repeat relative min-h-[100vh] justify-center items-center'}>
+      <div className={'absolute top-0 left-0 right-0 bottom-0 bg-black opacity-[0.5] z-0'}/>
+      <h2 className={'text-2xl text-cu-white text-center font-bold z-10'}>I know That
+        <span className={'text-purple-600'}> Good Development</span>
         <br />
         Means 
-        <span className={'text-purple-600'}>Good Business</span> 
+        <span className={'text-purple-600'}> Good Business</span> 
       </h2>
-      <div className="app__rpofile">
+      <div className="app__rpofile flex justify-center items-start flex-wrap mt-8 z-10">
         {about.map((about,index) => (
-          <motion.div 
-            whileInView={{opacity:1}}
-            key={index}
-            whileHover={{scale:1.1}}
-            transition={{duration:0.5,type:'tween'}}
-            className={'app__profile-item'}
-          >
-            <img src={about.imageUrl} alt={about.title}/>
-            <h2 className={'bold-text mt-4'}>{about.title}</h2>
-            <h2 className={'p-text mt-3'}>{about.desc}</h2>
-          </motion.div>
+          <AboutCard about={about} key={index}/>
         ))}
       </div>
     </div>
   )
 };
 
-export default About;
+export default AppWrap(About,'about');

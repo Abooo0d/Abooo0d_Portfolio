@@ -2,9 +2,10 @@ import { motion } from "framer-motion";
 import images from "../../Constants/images";
 import { FaReact } from "react-icons/fa6";
 import { FaLaravel } from "react-icons/fa";
-import { RiTailwindCssFill } from "react-icons/ri";
 import { DiJavascript1 } from "react-icons/di";
 import { FaPhp,FaSass } from "react-icons/fa";
+import {AppWrap} from "../../Wrapper/index.js";
+
 const Header = () => {
   const scaleVariants = {
     whileInView: {
@@ -17,8 +18,8 @@ const Header = () => {
     },       
   };
   return (
-    <div id='home'
-         className="min-h-[100vh] scroll app__header flex items-center justify-start md:justify-center relative bg-homeBg bg-cover bg-repeat bg-center flex-1 w-[100%] flex-col md:flex-row px-8 py-4 pt-24">
+    <div
+         className="min-h-[100vh] md:max-h-[100vh]  scroll app__header flex items-center justify-start md:justify-center relative bg-homeBg bg-cover bg-repeat bg-center flex-1 w-[100%] flex-col md:flex-row px-8 py-4 pt-24">
       <motion.div
         whileInView={{x: [-100, 0], opacity: [0, 1]}}
         transition={{duration: 0.8}}
@@ -55,10 +56,10 @@ const Header = () => {
           className={"overlay-circle max-[767px]:w-[80%] max-[767px]:mx-auto"}
           alt={'profile-circle'}
         />
-        <img src={images.profile} className={'absolute -top-10 left-[50%] translate-x-[-50%] max-[767px]:left-[50%] max-[767px]:translate-x-[-50%] z-0 max-w-full max-[767px]:mx-auto max-[767px]:w-[80%] '} alt="profile"/>
+        <img src={images.profile} className={'absolute sm:-top-[80px] left-[50%] translate-x-[-50%] max-[767px]:left-[50%] max-[767px]:translate-x-[-50%] sm:height:[400px] z-0 max-w-full max-[767px]:mx-auto max-[767px]:w-[70%] '} alt="profile"/>
       </motion.div>
       <div
-        className={"flex flex-row md:flex-col justify-center items-start flex-wrap md:flex-[0.60] mt-20 xs:mt-28  md:mt-0 gap-x-[20px] md:gap-3 md:ml-14 xs:gap-y-2"}>
+        className={"hidden md:flex flex-row md:flex-col justify-center items-start flex-wrap md:flex-[0.60] mt-24 xs:mt-28  md:mt-8 gap-x-[20px] md:gap-3 md:ml-14 xs:gap-y-2"}>
         {/*grid grid-cols-3 gap-x-12 gap-y-4*/}
         <motion.div
           variants={scaleVariants}
@@ -77,7 +78,7 @@ const Header = () => {
           className="skills__con"
         >
           <div
-            className="skills__circle md:w-[120px] md:h-[120px] mt-[20px] xs:mt-4 md:mt-0 md:mx-14 bg-blue-400 hover:shadow-[0px_0px_20px_4px_#60a5fa]">
+            className="skills__circle w-[120px] h-[120px] mt-[20px] xs:mt-0 md:mt-0 md:mx-14 bg-blue-400 hover:shadow-[0px_0px_20px_4px_#60a5fa]">
             <FaReact className='w-[60%] h-[60%] text-cu-white'/>
           </div>
         </motion.div>
@@ -86,7 +87,7 @@ const Header = () => {
           whileInView={scaleVariants.whileInView}
           className="skills__con"
         >
-          <div className="skills__circle md:w-[95px] md:h-[95px] xs:mt-4 md:mt-0 bg-red-700 md:mx-12 hover:shadow-[0px_0px_20px_4px_#b91c1c]">
+          <div className="skills__circle w-[95px] h-[95px] -mt-[30px] xs:mt-0 md:mt-0 bg-red-700 md:mx-12 hover:shadow-[0px_0px_20px_4px_#b91c1c]">
             <FaLaravel className='w-[60%] h-[60%] text-cu-white'/>
           </div>
         </motion.div>
@@ -96,7 +97,7 @@ const Header = () => {
           className="skills__con"
         >
           <div
-            className="skills__circle md:w-[95px] md:h-[95px] -mt-[30px] xs:mt-0 md:mx-8 md:mt-0 bg-amber-400 hover:shadow-[0px_0px_20px_4px_#fbbf24]">
+            className="skills__circle w-[95px] h-[95px] mt-[30px] xs:mt-0 md:mx-8 md:mt-0 bg-amber-400 hover:shadow-[0px_0px_20px_4px_#fbbf24]">
             <DiJavascript1 className='w-[60%] h-[60%] text-cu-white'/>
           </div>
         </motion.div>
@@ -106,24 +107,15 @@ const Header = () => {
           className="skills__con"
         >
           <div
-            className="skills__circle md:w-[80px] md:h-[80px] mt-[20px] xs:mt-4 md:-mx-0 md:mt-0 bg-pink-500 hover:shadow-[0px_0px_20px_4px_#ec4899]">
+            className="skills__circle w-[80px] h-[80px]  xs:mt-0 md:-mx-0 md:mt-0 bg-pink-500 hover:shadow-[0px_0px_20px_4px_#ec4899]">
             <FaSass className='w-[60%] h-[60%] text-cu-white'/>
           </div>
         </motion.div>
-        <motion.div
-          variants={scaleVariants}
-          whileInView={scaleVariants.whileInView}
-          className="skills__con"
-        >
-          <div
-            className="skills__circle md:w-[70px] md:h-[70px] -mt-[20px] xs:mt-4 md:-mx-8 md:mt-0 bg-sky-500 hover:shadow-[0px_0px_20px_4px_#0ea5e9]">
-            <RiTailwindCssFill className='w-[60%] h-[60%] text-cu-white'/>
-          </div>
-        </motion.div>
+       
 
       </div>
     </div>
   );
 };
 
-export default Header;
+export default AppWrap(Header,'home');

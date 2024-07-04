@@ -1,6 +1,6 @@
 import { useState } from "react";
-import images from "../../Constants/images";
-import links from "../../Constants/links";
+import images from "../Constants/images.js";
+import links from "../Constants/links.js";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
 import { motion } from "framer-motion";
 import { CgMenuRight } from "react-icons/cg";
@@ -13,11 +13,11 @@ const Navbar = () => {
   };
   return (
     <>
-      <nav className="w-full flex justify-between items-center px-8 py-4 bg-[rgba(255,255,255,0.25)] backdrop-blur border-[1px] border-solid border-[rgba(255,255,255,0.18)] fixed z-[2]">
+      <nav className="z-[100] w-full flex justify-between items-center px-8 py-4 bg-[rgba(255,255,255,0.25)] backdrop-blur border-[1px] border-solid border-[rgba(255,255,255,0.18)] fixed ">
         <div className="flex justify-start items-center">
           <img
-            className="w-[90px] h-[20px] xl:w[180px] xl:h-[40]"
-            src={images.logo}
+            className="w-[90px] h-[30px] xl:w[180px] xl:h-[40] cursor-pointer "
+            src={images.Abood}
             alt="logo"
           />
         </div>
@@ -30,7 +30,7 @@ const Navbar = () => {
                 key={`link-${item}`}
               >
                 <a
-                  className="text-cu-gray flex-col uppercase font-[500] transition-all duration-300 ease-in-out flex group-hover:text-cu-white "
+                  className="text-indigo-900 font-bold flex-col uppercase transition-all duration-300 ease-in-out flex group-hover:text-cu-white "
                   href={`#${item}`}
                 >
                   {item}
@@ -50,7 +50,7 @@ const Navbar = () => {
           <motion.div
             animate={toggle ? "open" : "closed"}
             variants={variants}
-            className=" shadow-lg rounded-bl-2xl fixed top-0 bottom-0 right-0 z-10 p-4 w-[400px] max-w-[100%] h-[50vh] flex justify-start items-start flex-col bg-cu-white bg-menuBg bg-repeat bg-cover "
+            className=" shadow-lg rounded-bl-2xl fixed top-0 bottom-0 right-0 z-10 p-4 w-[400px] max-w-[100%] h-[40vh] flex justify-start items-start flex-col bg-cu-white bg-menuBg bg-repeat bg-cover "
           >
             <IoCloseCircleOutline
               onClick={() => {
