@@ -4,8 +4,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        "cu-primary": "#edf2f8",
-        "cu-secondary": "#313bac",
+        "cu-primary": "rgb(147 51 234)",
+        "cu-secondary": "rgb(79 70 229)",
         "cu-black": "#030303",
         "cu-light-gray": "#edf2f8",
         "cu-gray": "#6b7688",
@@ -15,8 +15,8 @@ export default {
       backgroundImage: {
         menuBg: "url(/src/Assets/bgWhite.png)",
         homeBg: "url(/src/Assets/bgIMG.png)",
-        aboutBg: "url(/src/Assets/aboutbg.jpg)",
-        workBg: "url(/src/Assets/workbg.jpg)",
+        workBg: "url(/src/Assets/aboutbg.jpg)",
+        aboutBg: "url(/src/Assets/workbg.jpg)",
       },
       boxShadow: {
         "my-custom-shadow":

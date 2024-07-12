@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { client } from "../../client.js";
-import AboutCard from "../../Components/AboutCard.jsx";
+import { AboutCard } from "../../Components/index.js";
 import { AppWrap } from "../../Wrapper/index.js";
 
 const About = () => {
@@ -17,7 +17,7 @@ const About = () => {
     >
       <div
         className={
-          "absolute top-0 left-0 right-0 bottom-0 bg-black opacity-[0.5] z-0"
+          "absolute top-0 left-0 right-0 bottom-0 bg-gray-400 opacity-[0.4] z-0"
         }
       />
       <h2
@@ -26,7 +26,7 @@ const About = () => {
         }
       >
         I know That
-        <span className={"text-cu-white bg-purple-600 rounded-md px-2  ml-1 "}>
+        <span className={"text-cu-white bg-purple-600 rounded-md px-2  ml-1"}>
           {" "}
           Good Development
         </span>
@@ -39,7 +39,7 @@ const About = () => {
           Good Business
         </span>
       </h2>
-      <div className="app__rpofile flex justify-center items-start flex-wrap mt-8 z-10">
+      <div className="app__ flex justify-center items-start flex-wrap mt-8 z-10">
         {about.map((about, index) => (
           <AboutCard about={about} key={index} order={index} />
         ))}

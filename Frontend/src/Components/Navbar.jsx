@@ -22,23 +22,19 @@ const Navbar = () => {
           />
         </div>
         <ul className="md:flex hidden flex-1 justify-center items-center gap-1">
-          {links.map((item, index) => (
-            <div className="relative group flex items-center justify-center">
-              <div className="absolute w-[5px] h-[5px] -top-2 left-[50%] -translate-x[50%] bg-transparent rounded-full mb-[5px] group-hover:bg-cu-secondary/80 transition-all duration-300 ease-in-out" />
+          {links.map((item) => (
+            <div className="relative group flex items-center justify-center duration-300 hover:-rotate-[6deg]">
               <li
-                className="app__flex p-text mx-4 my-0 cursor-pointer flex-col group p-1 hover:bg-cu-secondary/80 duration-200 rounded-lg group h-[30px]"
+                className="app__flex p-text mx-4 my-0 cursor-pointer flex-col group p-1 duration-200 rounded-lg group h-[30px]"
                 key={`link-${item}`}
               >
                 <a
-                  className="text-indigo-900 font-bold flex-col uppercase transition-all duration-300 ease-in-out flex group-hover:text-cu-white "
+                  className="text-cu-primary font-bold flex-col uppercase transition-all duration-300 ease-in-out flex "
                   href={`#${item}`}
                 >
                   {item}
                 </a>
               </li>
-              {index < links.length - 1 && (
-                <div className="h-[40px] w-[1px] bg-gray-300 " />
-              )}
             </div>
           ))}
         </ul>
@@ -68,7 +64,7 @@ const Navbar = () => {
                     }}
                     key={`${item}`}
                   >
-                    <div className="w-[5px] h-[5px] bg-transparent rounded-full mb-[5px] group-hover:bg-cu-secondary/80 transition-all duration-300 ease-in-out absolute md:relative top-[50%] left-[-15px] -translate-y-[50%]" />
+                    {/* <div className="w-[5px] h-[5px] bg-transparent rounded-full mb-[5px] group-hover:bg-cu-primary transition-all duration-300 ease-in-out absolute md:relative top-[50%] left-[-15px] -translate-y-[50%]" /> */}
                     <a
                       className="text-cu-gray flex-col uppercase font-[500] transition-all duration-300 ease-in-out flex group-hover:text-cu-white"
                       href={`#${item}`}
