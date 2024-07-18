@@ -12,7 +12,7 @@ const About = () => {
   return (
     <div
       className={
-        "flex flex-col w-full md:mt-4 pt-8 bg-aboutBg bg-cover bg-repeat relative min-h-[100vh] justify-center items-center"
+        "flex flex-col w-full  pt-8 bg-aboutBg bg-cover bg-repeat relative min-h-[100vh] justify-center items-center"
       }
     >
       <div
@@ -22,12 +22,11 @@ const About = () => {
       />
       <h2
         className={
-          "text-2xl text-cu-white text-center font-bold z-10 leading-9"
+          "text-xl md:text-2xl text-cu-white text-center font-bold z-10 leading-9"
         }
       >
         I know That
         <span className={"text-cu-white bg-purple-600 rounded-md px-2  ml-1"}>
-          {" "}
           Good Development
         </span>
         <br />
@@ -35,11 +34,10 @@ const About = () => {
         <span
           className={"text-cu-white bg-purple-600 rounded-md px-2 ml-1 mt-1"}
         >
-          {" "}
           Good Business
         </span>
       </h2>
-      <div className="app__ flex justify-center items-start flex-wrap mt-8 z-10">
+      <div className="app__ flex justify-center items-start flex-wrap mt-4 mb-4 md:mb-0 md:mt-8 z-10 gap-[10px]">
         {about.map((about, index) => (
           <AboutCard about={about} key={index} order={index} />
         ))}

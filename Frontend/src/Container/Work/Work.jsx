@@ -19,44 +19,6 @@ const Work = () => {
     });
   }, []);
   const [activeCard, setActiveCard] = useState(0);
-  const works2 = [
-    {
-      title: "Social Media App",
-      description:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores, maxime voluptatem ratione perspiciatis et temporibus laudantium, itaque rem hic est blanditiis impedit nam sunt cumque aperiam, quidem non optio ipsum.",
-      imgUrl: images.about01,
-      tags: ["React"],
-      projectLink: "",
-      codeLink: "",
-    },
-    {
-      title: "Social Media App",
-      description:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores, maxime voluptatem ratione perspiciatis et temporibus laudantium, itaque rem hic est blanditiis impedit nam sunt cumque aperiam, quidem non optio ipsum.",
-      imgUrl: images.about01,
-      tags: ["React"],
-      projectLink: "",
-      codeLink: "",
-    },
-    {
-      title: "Social Media App",
-      description:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores, maxime voluptatem ratione perspiciatis et temporibus laudantium, itaque rem hic est blanditiis impedit nam sunt cumque aperiam, quidem non optio ipsum.",
-      imgUrl: images.about01,
-      tags: ["React"],
-      projectLink: "",
-      codeLink: "",
-    },
-    {
-      title: "Social Media App",
-      description:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores, maxime voluptatem ratione perspiciatis et temporibus laudantium, itaque rem hic est blanditiis impedit nam sunt cumque aperiam, quidem non optio ipsum.",
-      imgUrl: images.about01,
-      tags: ["React"],
-      projectLink: "",
-      codeLink: "",
-    },
-  ];
   return (
     <div className="relative bg-workBg bg-cover bg-repeat min-h-[100vh] min-w-full">
       <div
@@ -65,11 +27,10 @@ const Work = () => {
       <div className="relative min-h-[100vh] w-full flex justify-center items-center flex-col py-8">
         <h2
           className={
-            "text-2xl text-cu-primary text-center font-bold z-10 relative"
+            "text-xl  md:text-2xl text-cu-white text-center font-bold z-10 relative"
           }
         >
-          {" "}
-          My Creative
+          My Creative{" "}
           <span className={"text-cu-white bg-cu-primary rounded-md p-1 "}>
             PortFolio
           </span>
@@ -90,7 +51,7 @@ const Work = () => {
         <motion.div
           animate={animateCard}
           transition={{ duration: 0.5, delayChildren: 0.5 }}
-          className="app__work-portfolio app__flex w-full h-[100%] gap-[15px] mt-8"
+          className="app__work-portfolio app__flex w-full h-[100%] gap-[15px] mt-8 flex-col md:flex-row "
         >
           {works.map((work, index) => (
             <WorkCard

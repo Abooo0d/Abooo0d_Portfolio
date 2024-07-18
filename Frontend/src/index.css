@@ -25,7 +25,7 @@
   font-family: var(--font-base);
 }
 .work-cark {
-  @apply flex-col max-w-[500px] bg-black/40 p-2 rounded-md duration-300 cursor-pointer max-h-[450px] relative backdrop-blur-sm;
+  @appl;
 }
 .work-card-active {
 }
@@ -75,10 +75,6 @@
   flex: 1;
   width: 100%;
   flex-direction: column;
-
-  @media screen and (max-width: 450px) {
-    padding: 4rem 1rem 2rem;
-  }
 }
 
 .copyright {

@@ -6,7 +6,7 @@ const AboutCard = ({ about, order }) => {
       whileInView={{ opacity: [0, 1], x: [-200, 50, -20, 0] }}
       // whileHover={{ scale: 1.1 }}
       transition={{ duration: order * 0.2 + 0.5, type: "twin" }}
-      className={` app__profile-item w-[230px]  hover:scale-75 relative duration-0 bg-cu-white/40 backdrop-blur-md rounded-lg h-[400px] overflow-hidden flex justify-start items-start flex-col m-8 2xl:w-[370px] 2xl:mx-8 2xl:my-16 group`}
+      className={` app__profile-item w-[230px] max-w-[250px ]  relative duration-0 bg-cu-white/40 backdrop-blur-md rounded-lg h-[350px] overflow-hidden flex justify-start items-start flex-col 2xl:w-[370px] 2xl:mx-8 2xl:my-16 group`}
     >
       <div className="absolute top-0 left-0 bottom-0 bg-purple-500/40 z-0 duration-300 w-0 group-hover:w-full" />
       <img

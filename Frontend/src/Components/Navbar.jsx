@@ -41,7 +41,7 @@ const Navbar = () => {
         <div className="w-[35px] h-[35px] rounded-full relative flex md:hidden justify-center items-center bg-transparent">
           <CgMenuRight
             onClick={() => setToggle((toggle) => !toggle)}
-            className="flex w-[32px] h-[32px] text-cu-secondary cursor-pointer hover:bg-cu-secondary/80 hover:text-white duration-200 rounded-lg p-[3px]"
+            className="flex w-[32px] h-[32px] text-cu-primary cursor-pointer hover:bg-cu-primary hover:text-white duration-200 rounded-lg p-[3px]"
           />
           <motion.div
             animate={toggle ? "open" : "closed"}

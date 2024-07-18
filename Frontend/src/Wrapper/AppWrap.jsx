@@ -4,7 +4,7 @@ const AppWrap = (Component, idName, className) =>
     return (
       <div
         id={idName}
-        className={`app__container ${className} relative p-0 min-h-[100vh]`}
+        className={`app__container ${className} relative p-0 min-h-[100vh] overflow-hidden`}
       >
         <SocialMedia />
         <div className={"app__wrapper app__flex p-0"}>

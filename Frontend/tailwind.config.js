@@ -15,8 +15,9 @@ export default {
       backgroundImage: {
         menuBg: "url(/src/Assets/bgWhite.png)",
         homeBg: "url(/src/Assets/bgIMG.png)",
-        workBg: "url(/src/Assets/aboutbg.jpg)",
-        aboutBg: "url(/src/Assets/workbg.jpg)",
+        workBg: "url(/src/Assets/aboutBg.jpg)",
+        aboutBg: "url(/src/Assets/workBg.jpg)",
+        languagesBg: "url(/src/Assets/languagesBg.jpg)",
       },
       boxShadow: {
         "my-custom-shadow":
