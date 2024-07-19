@@ -7,7 +7,7 @@ import {
   Work,
   Languages,
 } from "./Container";
-import { Navbar } from "./Components/index.js";
+import { Navbar, Divider } from "./Components/index.js";
 import "./index.css";
 const App = () => {
   return (
@@ -15,8 +15,9 @@ const App = () => {
       <Navbar />
       <Header />
       <Languages />
-      <About />
       <Work />
+      {/* <Divider co lor1="#313155" color2="red" /> */}
+      <About />
       <Skills />
       <Testimonial />
       <Footer />

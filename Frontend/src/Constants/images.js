@@ -18,12 +18,13 @@ import sass from "../Assets/sass.png";
 import typescript from "../Assets/typescript.png";
 import vue from "../Assets/vue.png";
 import laravel from "../Assets/laravel.png";
-import Abood from '../Assets/AboodLogo.png';
+import Abood from "../Assets/AboodLogo.png";
 import about01 from "../Assets/about01.png";
 import about02 from "../Assets/about02.png";
 import about03 from "../Assets/about03.png";
 import about04 from "../Assets/about04.png";
-
+import divider from "../Assets/dividerBg2.png";
+import dividerBottom from "../Assets/dividerBottomBg copy.png";
 import profile from "../Assets/profile.png";
 import circle from "../Assets/circle.svg";
 import logo from "../Assets/logo.png";
@@ -37,6 +38,8 @@ import skype from "../Assets/skype.png";
 import spotify from "../Assets/spotify.png";
 
 export default {
+  divider,
+  dividerBottom,
   email,
   mobile,
   api,
@@ -71,5 +74,5 @@ export default {
   nb,
   skype,
   spotify,
-  Abood
+  Abood,
 };

@@ -57,9 +57,6 @@
   .skills__con {
     @apply h-[100%] flex justify-center md:justify-start w-fit md:w-[100%];
   }
-  .skills__circle {
-    @apply flex justify-center items-center rounded-full duration-300 hover:scale-110 hover:shadow-[0px_0px_20px_4px_#60a5fa] xs:w-[100px] xs:h-[100px] md:mt-0;
-  }
 }
 ::-webkit-scrollbar {
   width: 5px;

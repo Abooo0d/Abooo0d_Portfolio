@@ -52,13 +52,13 @@ const Navbar = () => {
               onClick={() => {
                 setToggle(false);
               }}
-              className="absolute top-[20px] right-[32px] flex w-[32px] h-[32px] text-cu-secondary hover:bg-cu-secondary/80 hover:text-white duration-200 rounded-lg cursor-pointer p-[3px]"
+              className="absolute top-[20px] right-[32px] flex w-[32px] h-[32px] text-cu-primary hover:bg-cu-secondary hover:text-white duration-200 rounded-lg cursor-pointer p-[3px]"
             />
             <ul className="flex flex-col gap-1 p-4 pt-6 w-[80%]">
               {links.map((item, index) => (
                 <>
                   <li
-                    className="flex justify-start p-text mx-4 my-0 cursor-pointer flex-col group relative w-[200px] rounded-lg p-2 duration-200 hover:bg-cu-secondary/80 hover:text-cu-white group`"
+                    className="flex justify-start p-text mx-4 my-0 cursor-pointer flex-col group relative w-[200px] rounded-lg p-2 duration-200 hover:bg-cu-primary hover:text-cu-white group`"
                     onClick={() => {
                       setToggle(false);
                     }}

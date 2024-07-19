@@ -20,11 +20,11 @@ const Work = () => {
   }, []);
   const [activeCard, setActiveCard] = useState(0);
   return (
-    <div className="relative bg-workBg bg-cover bg-repeat min-h-[100vh] min-w-full">
+    <div className="relative bg-workBg bg-cover bg-repeat min-h-[100vh] min-w-full ">
       <div
         className={"absolute top-0 left-0 right-0 bottom-0 bg-black/50  z-0"}
       />
-      <div className="relative min-h-[100vh] w-full flex justify-center items-center flex-col py-8">
+      <div className="relative min-h-[100vh] w-full flex justify-center items-center flex-col py-8 shadow-worksShadow">
         <h2
           className={
             "text-xl  md:text-2xl text-cu-white text-center font-bold z-10 relative"

@@ -18,10 +18,15 @@ export default {
         workBg: "url(/src/Assets/aboutBg.jpg)",
         aboutBg: "url(/src/Assets/workBg.jpg)",
         languagesBg: "url(/src/Assets/languagesBg.jpg)",
+        dividerBg: "url(/src/Assets/dividerBg2.png)",
+        dividerBottomBg: "url(/src/Assets/dividerBottomBg2.png)",
+        sectionDividerBg: "linear-gradient(#1e214c,#9333ea)",
       },
       boxShadow: {
         "my-custom-shadow":
           "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
+        worksShadow: "#1d204b 0 50px 68px inset,#1d204b 0 -50px 68px inset",
+        // aboutShadow: "",
       },
       screens: {
         xs: "475px",

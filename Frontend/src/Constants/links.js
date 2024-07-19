@@ -1,2 +1,2 @@
-let links = ["home", "about", "work", "skills", "contact"];
+let links = ["home", "work", "about", "skills", "contact"];
 export default links;
