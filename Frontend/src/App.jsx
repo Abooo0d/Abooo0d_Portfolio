@@ -14,9 +14,8 @@ const App = () => {
     <div className="app">
       <Navbar />
       <Header />
-      <Languages />
+      {/* <Languages /> */}
       <Work />
-      {/* <Divider co lor1="#313155" color2="red" /> */}
       <About />
       <Skills />
       <Testimonial />

@@ -2,11 +2,15 @@ import { motion } from "framer-motion";
 import images from "../../Constants/images";
 
 import { AppWrap } from "../../Wrapper/index.js";
-
+import SkillCard from "../../Components/SkillCard.jsx";
+import { FaReact } from "react-icons/fa6";
+import { FaLaravel } from "react-icons/fa";
+import { DiJavascript1 } from "react-icons/di";
+import { FaPhp, FaSass } from "react-icons/fa";
 const Header = () => {
   return (
     <div className="min-h-[100vh] gap-[20px] max-h-[100vh] scroll app__header flex items-center justify-start md:justify-center relative bg-h omeBg bg-cover bg-repeat bg-center flex-1 w-[100%] flex-col md:flex-row px-8 py-4 pt-24">
-      <div className="flex-[0.60] mb-[50px] ">
+      <div className="flex-[0.60] mb-[50px]">
         <div className="relative pl-4">
           <div className="absolute bottom-[-5px] left-[20%] w-[60%] h-[1px] md:left-0 md:top-0 md:h-[100%] md:w-[1px] bg-cu-primary" />
           <h2 className="text-[35px] md:text-[40px] text-cu-primary ">
