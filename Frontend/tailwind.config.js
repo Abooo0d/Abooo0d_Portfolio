@@ -18,6 +18,7 @@ export default {
         workBg: "url(/src/Assets/aboutBg.jpg)",
         aboutBg: "url(/src/Assets/workBg.jpg)",
         languagesBg: "url(/src/Assets/languagesBg.jpg)",
+        skillsBg: "url(/src/Assets/SkillsBg.jpg)",
         dividerBg: "url(/src/Assets/dividerBg2.png)",
         dividerBottomBg: "url(/src/Assets/dividerBottomBg2.png)",
         sectionDividerBg: "linear-gradient(#1e214c,#9333ea)",

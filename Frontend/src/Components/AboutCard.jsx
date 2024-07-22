@@ -4,27 +4,21 @@ const AboutCard = ({ about, order }) => {
   return (
     <motion.div
       whileInView={{ opacity: [0, 1], x: [-200, 50, -20, 0] }}
-      // whileHover={{ scale: 1.1 }}
       transition={{ duration: order * 0.2 + 0.5, type: "twin" }}
-      className={` app__profile-item w-[230px] max-w-[250px ]  relative duration-0 bg-cu-white/40 backdrop-blur-md rounded-lg h-[350px] overflow-hidden flex justify-start items-start flex-col 2xl:w-[370px] 2xl:mx-8 2xl:my-16 group`}
+      className="group w-[300px] h-[430px] flex justify-end items-start flex-col relative bg-cu-white/40 rounded-[20px] p-5 border-[2px] border-solid border-[#9333ea] cursor-pointer duration-300"
     >
-      <div className="absolute top-0 left-0 bottom-0 bg-purple-500/40 z-0 duration-300 w-0 group-hover:w-full" />
-      <img
-        src={urlFor(about.imgUrl)}
-        alt={about.title}
-        className={
-          "w-full min-h-[170px] max-h-[170px] rounded-lg object-cover 2xl:h-[320px] relative p-2 group-hover:p-0 duration-300"
-        }
-      />
-      <h2
-        className={
-          "bold-text mt-4 text-purple-600 relative pl-2 group-hover:text-cu-white duration-300"
-        }
-      >
+      <div className="absolute top-[20px] left-[20px] w-[300px] h-[200px] rounded-[20px] group-hover:scale-105 duration-300 flex justify-center items-center overflow-hidden z-10">
+        <img
+          src={urlFor(about.imgUrl)}
+          alt={about.title}
+          className=" object-cover max-w-full w-full h-full max-h-full"
+        />
+      </div>
+      <div className="absolute left-0 bottom-0 h-[100%] bg-cu-primary/40 duration-300 w-0 group-hover:w-full rounded-[20px] z-0" />
+      <h2 className="text-cu-primary group-hover:text- text-xl font-bold z-10 duration-300">
         {about.title}
-        {/* <div className="absolute bottom-0 left-[5px] bg-cu-white w-0 h-[1px] group-hover:w-[80%] duration-300" /> */}
       </h2>
-      <p className={"text-sm mt-0 text-cu-white relative px-2"}>
+      <p className="h-[150px] pl-4 text-[15px] text-[#333] group-hover:text-[#eee] z-10 duration-300">
         {about.description}
       </p>
     </motion.div>
