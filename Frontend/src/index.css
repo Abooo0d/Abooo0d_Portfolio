@@ -45,6 +45,9 @@
   display: flex;
   flex-direction: row;
 }
+.work-background {
+  background-image: url(./Assets//aboutBg.jpg);
+}
 @layer utilities {
   .app__flex {
     @apply flex justify-center items-center;

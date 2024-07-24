@@ -5,6 +5,7 @@ import { AppWrap } from "../../Wrapper";
 import { urlFor, client } from "../../client";
 import { WorkCard } from "../../Components/index";
 import images from "../../Constants/images";
+import "../../index.css";
 const Work = () => {
   const handelWorkFilter = () => {};
   const [activeFilter, setActiveFilter] = useState("");
@@ -20,7 +21,7 @@ const Work = () => {
   }, []);
   const [activeCard, setActiveCard] = useState(0);
   return (
-    <div className="relative bg-workBg bg-cover bg-repeat min-h-[100vh] min-w-full ">
+    <div className=" relative work-background bg-cover bg-repeat min-h-[100vh] min-w-full ">
       <div className="h-[150px] overflow-hidden w-full absolute z-10">
         <svg
           viewBox="0 0 400 150"
