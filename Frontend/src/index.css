@@ -13,7 +13,6 @@
   --brown-color: #46364a;
   --white-color: #ffffff;
 }
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -23,6 +22,8 @@
 .app {
   background-color: var(--primary-color);
   font-family: var(--font-base);
+  perspective: 500px;
+  transform-style: preserve-3d;
 }
 .work-cark {
   @appl;
@@ -55,7 +56,7 @@
     @apply text-2xl font-bold text-center text-black capitalize;
   }
   .skills__con {
-    @apply h-[100%] flex justify-center md:justify-start w-fit md:w-[100%];
+    @apply h-[100%] flex justify-center md:justify-start w-fit;
   }
 }
 ::-webkit-scrollbar {
@@ -191,4 +192,24 @@
   .copyright {
     padding: 2rem;
   }
+}
+.custom-shape-divider-top-1721805143 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1721805143 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 60px;
+}
+
+.custom-shape-divider-top-1721805143 .shape-fill {
+  fill: #ccd2da;
 }

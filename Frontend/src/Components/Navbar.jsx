@@ -23,11 +23,11 @@ const Navbar = () => {
         </div>
         <ul className="md:flex hidden flex-1 justify-center items-center gap-1">
           {links.map((item) => (
-            <div className="relative group flex items-center justify-center duration-300 hover:-rotate-[6deg]">
-              <li
-                className="app__flex p-text mx-4 my-0 cursor-pointer flex-col group p-1 duration-200 rounded-lg group h-[30px]"
-                key={`link-${item}`}
-              >
+            <div
+              className="relative group flex items-center justify-center duration-300 hover:-rotate-[6deg]"
+              key={`link-${item}`}
+            >
+              <li className="app__flex p-text mx-4 my-0 cursor-pointer flex-col group p-1 duration-200 rounded-lg group h-[30px]">
                 <a
                   className="text-cu-primary font-bold flex-col uppercase transition-all duration-300 ease-in-out flex "
                   href={`#${item}`}
@@ -56,7 +56,7 @@ const Navbar = () => {
             />
             <ul className="flex flex-col gap-1 p-4 pt-6 w-[80%]">
               {links.map((item, index) => (
-                <>
+                <div key={`${item}`}>
                   <li
                     className="flex justify-start p-text mx-4 my-0 cursor-pointer flex-col group relative w-[200px] rounded-lg p-2 duration-200 hover:bg-cu-primary hover:text-cu-white group`"
                     onClick={() => {
@@ -75,7 +75,7 @@ const Navbar = () => {
                   {index < links.length - 1 && (
                     <div className="w-full h-[1px] bg-gray-200" />
                   )}
-                </>
+                </div>
               ))}
             </ul>
           </motion.div>
