@@ -223,11 +223,18 @@
   bottom: 0;
   z-index: 10;
   display: block;
-  height: 26px;
+  height: 30px;
   background-size: 30px 100%;
+
+  background-position: 0 0;
+}
+.spikes.gray {
   background-image: linear-gradient(135deg, #edf2f8 25%, transparent 25%),
     linear-gradient(225deg, #edf2f8 25%, transparent 25%);
-  background-position: 0 0;
+}
+.spikes.navy {
+  background-image: linear-gradient(135deg, #1e214b 25%, transparent 25%),
+    linear-gradient(225deg, #1d204b 25%, transparent 25%);
 }
 .custom-shape-divider-top-1721842854 {
   position: absolute;
@@ -257,4 +264,24 @@
 }
 .skills__con:hover span {
   transform: translateX(-50%) translateY(0);
+}
+.custom-shape-divider-top-1721849267 {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1721849267 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 100px;
+}
+
+.custom-shape-divider-top-1721849267 .shape-fill {
+  fill: #1f214c;
 }

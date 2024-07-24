@@ -62,26 +62,9 @@ const Skills = () => {
     },
   ];
   return (
-    <div
-      className={`relative bg-skillsBgs bg-[url(./Assets/SkillsBg.jpg)] bg-cover bg-repeat flex flex-col justify-start items-center pt-[65px] pb-[40px]`}
-    >
-      {/* <div className="custom-shape-divider-top-1721805143 z-10">
-        <svg
-          data-name="Layer 1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M602.45,3.86h0S572.9,116.24,281.94,120H923C632,116.24,602.45,3.86,602.45,3.86Z"
-            className="shape-fill"
-          ></path>
-        </svg>
-      </div> */}
-      <div class="spikes top-0" />
-
-      <div className="absolute top-0 left-0 h-full w-full bg-[#999]/50" />
-      <h2 className="text-xl md:text-2xl text-cu-white text-center font-bold z-10 leading-9 relative">
+    <div className="relative  flex flex-col justify-start items-center pt-[65px] pb-[40px]">
+      <div className="absolute w-[400px] h-[80px] top-[90px] left-0 bg-gradient-to-b from-cu-white to-cu-primary blur-[120px] " />
+      <h2 className="text-xl md:text-2xl text-cu-primary text-center font-bold z-10 leading-9 relative">
         My
         <span className={"text-cu-white bg-cu-primary rounded-md px-2  ml-1"}>
           Skills
@@ -100,21 +83,7 @@ const Skills = () => {
           />
         ))}
       </div>
-      <div class="spikes bottom-0 rotate-180" />
-
-      {/* <div class="custom-shape-divider-top-1721842854">
-        <svg
-          data-name="Layer 1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M1200,0H0V120H281.94C572.9,116.24,602.45,3.86,602.45,3.86h0S632,116.24,923,120h277Z"
-            class="shape-fill"
-          ></path>
-        </svg>
-      </div> */}
+      <div class="spikes bottom-0 rotate-180 navy" />
     </div>
   );
 };

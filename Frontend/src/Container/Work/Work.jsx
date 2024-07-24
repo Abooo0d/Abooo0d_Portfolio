@@ -22,19 +22,6 @@ const Work = () => {
   const [activeCard, setActiveCard] = useState(0);
   return (
     <div className=" relative work-background bg-cover bg-repeat min-h-[100vh] min-w-full ">
-      <div className="h-[150px] overflow-hidden w-full absolute z-10">
-        <svg
-          viewBox="0 0 400 150"
-          preserveAspectRatio="none"
-          // style="height: 100%; width: 100%;"
-          className="h-full w-full"
-        >
-          <path
-            d="M1.70,144.18 C137.13,-47.72 299.66,-1.46 586.90,-4.42 L500.00,0.00 L-0.00,0.00 Z"
-            className="fill-current text-[#edf2f8] min-w-full"
-          ></path>
-        </svg>
-      </div>
       <div
         className={"absolute top-0 left-0 right-0 bottom-0 bg-black/50  z-0"}
       />
