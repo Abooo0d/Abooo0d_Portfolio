@@ -25,7 +25,7 @@ const About = () => {
           ></path>
         </svg>
       </div>
-      <div className="absolute top-0 left-0 right-0 bottom-0 bg-gray-400 opacity-[0.4] z-0" />
+      {/* <div className="absolute top-0 left-0 right-0 bottom-0 bg-gray-400 opacity-[0.4] z-0" /> */}
       <div className="flex justify-center items-center flex-col gap-[5px]">
         {" "}
         <h2 className="text-xl md:text-2xl text-cu-primary text-center font-bold z-10 leading-9">

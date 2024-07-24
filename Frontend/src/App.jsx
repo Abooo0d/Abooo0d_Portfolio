@@ -1,4 +1,12 @@
-import { Header, Footer, About, Skills, Testimonial, Work } from "./Container";
+import {
+  Header,
+  Footer,
+  About,
+  Skills,
+  Testimonial,
+  Work,
+  Experiences,
+} from "./Container";
 import { Navbar, Divider } from "./Components/index.js";
 import "./index.css";
 const App = () => {
@@ -9,6 +17,7 @@ const App = () => {
       <Work />
       <About />
       <Skills />
+      <Experiences />
       <Testimonial />
       <Footer />
     </div>

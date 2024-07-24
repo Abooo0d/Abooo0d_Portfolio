@@ -214,5 +214,47 @@
 }
 
 .custom-shape-divider-top-1721805143 .shape-fill {
-  fill: #ccd2da;
+  fill: #edf2f8;
+}
+.spikes {
+  position: absolute;
+  right: 0;
+  left: -0%;
+  bottom: 0;
+  z-index: 10;
+  display: block;
+  height: 26px;
+  background-size: 30px 100%;
+  background-image: linear-gradient(135deg, #edf2f8 25%, transparent 25%),
+    linear-gradient(225deg, #edf2f8 25%, transparent 25%);
+  background-position: 0 0;
+}
+.custom-shape-divider-top-1721842854 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1721842854 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 79px;
+}
+
+.custom-shape-divider-top-1721842854 .shape-fill {
+  fill: #edf2f8;
+}
+.skill-tag {
+  transform: translateX(-50%) translateY(-50px);
+}
+.skill-tag-hover {
+  transform: translateX(-50%) translateY(0);
+}
+.skills__con:hover span {
+  transform: translateX(-50%) translateY(0);
 }

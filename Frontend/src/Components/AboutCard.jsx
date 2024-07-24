@@ -5,7 +5,7 @@ const AboutCard = ({ about, order }) => {
     <motion.div
       whileInView={{ opacity: [0, 1], x: [-200, 50, -20, 0] }}
       transition={{ duration: order * 0.2 + 0.5, type: "twin" }}
-      className="group w-[300px] h-[430px] flex justify-end items-start flex-col relative bg-cu-white/40 rounded-[20px] p-5 border-[2px] border-solid border-[#9333ea] cursor-pointer duration-300"
+      className="group w-[300px] h-[430px] flex justify-end items-start flex-col relative bg-cu-white/50 rounded-[20px] p-5 border-[2px] border-solid border-[#9333ea] cursor-pointer duration-300"
     >
       <div className="absolute top-[20px] left-[20px] w-[300px] h-[200px] rounded-[20px] group-hover:scale-105 duration-300 flex justify-center items-center overflow-hidden z-10">
         <img

@@ -36,8 +36,9 @@ import bolt from "../Assets/bolt.png";
 import nb from "../Assets/nb.png";
 import skype from "../Assets/skype.png";
 import spotify from "../Assets/spotify.png";
-
+import SkillsBg from "../Assets/SkillsBg.jpg";
 export default {
+  SkillsBg,
   divider,
   dividerBottom,
   email,

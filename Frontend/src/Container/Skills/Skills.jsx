@@ -6,7 +6,9 @@ import { DiJavascript1 } from "react-icons/di";
 import { FaPhp, FaSass } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SkillCard } from "../../Components";
-import images from "../../Constants/images";
+import { FaGitAlt } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+// import images from "../../Constants/images";
 const Skills = () => {
   const skills = [
     {
@@ -51,10 +53,19 @@ const Skills = () => {
       border: "border-sky-500",
       name: "Tailwind",
     },
+    {
+      icon: FaGithub,
+      color: "text-gray-800",
+      shadow: "hover:shadow-[0px_0px_35px_20px_#333]",
+      border: "border-gray-800",
+      name: "Github",
+    },
   ];
   return (
-    <div className="relative bg-aboutBg bg-cover bg-repeat flex flex-col justify-start items-center pt-[60px] pb-[30px]">
-      <div className="custom-shape-divider-top-1721805143 z-10">
+    <div
+      className={`relative bg-skillsBgs bg-[url(./Assets/SkillsBg.jpg)] bg-cover bg-repeat flex flex-col justify-start items-center pt-[65px] pb-[40px]`}
+    >
+      {/* <div className="custom-shape-divider-top-1721805143 z-10">
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
@@ -66,8 +77,10 @@ const Skills = () => {
             className="shape-fill"
           ></path>
         </svg>
-      </div>
-      <div className="absolute top-0 left-0 h-full w-full bg-[#999]/65" />
+      </div> */}
+      <div class="spikes top-0" />
+
+      <div className="absolute top-0 left-0 h-full w-full bg-[#999]/50" />
       <h2 className="text-xl md:text-2xl text-cu-white text-center font-bold z-10 leading-9 relative">
         My
         <span className={"text-cu-white bg-cu-primary rounded-md px-2  ml-1"}>
@@ -87,6 +100,21 @@ const Skills = () => {
           />
         ))}
       </div>
+      <div class="spikes bottom-0 rotate-180" />
+
+      {/* <div class="custom-shape-divider-top-1721842854">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M1200,0H0V120H281.94C572.9,116.24,602.45,3.86,602.45,3.86h0S632,116.24,923,120h277Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div> */}
     </div>
   );
 };
