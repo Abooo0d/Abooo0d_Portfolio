@@ -5,7 +5,7 @@ export default {
     extend: {
       colors: {
         "cu-primary": "rgb(147 51 234)",
-        "cu-secondary": "rgb(79 70 229)",
+        "cu-secondary": "rgb(111 36 179)",
         "cu-black": "#030303",
         "cu-light-gray": "#edf2f8",
         "cu-gray": "#6b7688",

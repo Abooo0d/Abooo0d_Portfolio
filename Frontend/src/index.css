@@ -6,7 +6,7 @@
   --font-base: "DM Sans", sans-serif;
 
   --primary-color: #edf2f8;
-  --secondary-color: #313bac;
+  --secondary-color: rgb(111, 36, 179);
   --black-color: #030303;
   --lightGray-color: #e4e4e4;
   --gray-color: #6b7688;
@@ -284,4 +284,20 @@
 
 .custom-shape-divider-top-1721849267 .shape-fill {
   fill: #1f214c;
+}
+
+.curved {
+  position: absolute;
+  width: 100%;
+  height: 144px;
+  transform-origin: left top;
+  transform: skewY(-7deg);
+}
+.curved.top {
+  top: 0;
+  background: rgb(31, 34, 76);
+}
+.curved.bottom {
+  bottom: -144px;
+  background: #edf2f8;
 }

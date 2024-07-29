@@ -21,7 +21,10 @@ const Work = () => {
   }, []);
   const [activeCard, setActiveCard] = useState(0);
   return (
-    <div className=" relative work-background bg-cover bg-repeat min-h-[100vh] min-w-full ">
+    <div
+      className=" relative work-backgrounds bg-cover bg-repeat min-h-[100vh] min-w-full z-10"
+      style={{ backgroundImage: `url(${images.aboutBg})` }}
+    >
       <div
         className={"absolute top-0 left-0 right-0 bottom-0 bg-black/50  z-0"}
       />
@@ -69,4 +72,4 @@ const Work = () => {
   );
 };
 
-export default AppWrap(Work, "work");
+export default AppWrap(Work, "works");

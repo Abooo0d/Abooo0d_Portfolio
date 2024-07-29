@@ -5,3 +5,4 @@ export { default as WorkCard } from "./WorkCard.jsx";
 export { default as AboutCard } from "./AboutCard.jsx";
 export { default as SkillCard } from "./SkillCard.jsx";
 export { default as Divider } from "./Divider.jsx";
+export { default as TestimonialCard } from "./TestimonialCard.jsx";

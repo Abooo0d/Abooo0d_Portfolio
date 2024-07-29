@@ -37,7 +37,13 @@ import nb from "../Assets/nb.png";
 import skype from "../Assets/skype.png";
 import spotify from "../Assets/spotify.png";
 import SkillsBg from "../Assets/SkillsBg.jpg";
+import workBg from "../Assets/workBg.jpg";
+import aboutBg from "../Assets/aboutBg.jpg";
+import homeBg from "../Assets/bgIMG.png";
 export default {
+  homeBg,
+  aboutBg,
+  workBg,
   SkillsBg,
   divider,
   dividerBottom,

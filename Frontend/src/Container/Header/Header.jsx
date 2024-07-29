@@ -9,7 +9,10 @@ import { DiJavascript1 } from "react-icons/di";
 import { FaPhp, FaSass } from "react-icons/fa";
 const Header = () => {
   return (
-    <div className=" min-h-[100vh] gap-[20px] max-h-[100vh] scroll app__header flex items-center justify-start md:justify-center relative bg-homeBg bg-cover bg-repeat bg-center flex-1 w-[100%] flex-col md:flex-row px-8 py-4 pt-24">
+    <div
+      className=" min-h-[100vh] gap-[20px] max-h-[100vh] scroll app__header flex items-center justify-start md:justify-center relative bg-homeBgs bg-cover bg-repeat bg-center flex-1 w-[100%] flex-col md:flex-row px-8 py-4 pt-24"
+      style={{ backgroundImage: `url(${images.homeBg})` }}
+    >
       <div className="absolute  w-[200px] h-[200px] top-[-40px] left-[-40px] bg-gradient-to-b from-cu-white to-cu-primary blur-[120px] " />
       <div className="flex-[0.60] mb-[50px]">
         <div className="relative pl-4">

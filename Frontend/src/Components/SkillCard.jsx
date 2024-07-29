@@ -9,7 +9,7 @@ const SkillCard = ({ Icon, color, index, shadow, border, name }) => {
       transition={{ duration: index * 0.2 + 0.5, type: "twin" }}
     >
       <div
-        className={`group w-[100px] h-[100px] app__flex border-[2px] border-solid ${border} rounded-full cursor-pointer bg-cu-white hover:bg-gray-100 duration-300 ${shadow} hover:scale-110 z-10`}
+        className={`group w-[100px] h-[100px] app__flex border-[1px] border-solid ${border} rounded-full cursor-pointer bg-cu-white hover:bg-gray-100 duration-300 ${shadow} hover:scale-110 z-10`}
       >
         <Icon className={`w-[60%] h-[60%] ${color}`} />
       </div>
