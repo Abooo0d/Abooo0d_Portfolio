@@ -5,9 +5,8 @@ import images from "../../Constants/images";
 const Experiences = () => {
   return (
     <div
-      className="app__flex pb-32 flex-col relative bg-skillsBg bg-cover bg-repeat  pt-32"
+      className="app__flex pb-32 flex-col relative bg-skillsBg bg-cover bg-repeat  pt-32 experiences-bg"
       id="experiences"
-      style={{ backgroundImage: `url(${images.SkillsBg})` }}
     >
       <div className="absolute top-0 left-0 w-full h-full bg-[#303030]/50 z-0 backdrop-blur-sm" />
       <div className="curved top" />
