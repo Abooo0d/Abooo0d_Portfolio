@@ -1,12 +1,12 @@
 import React from "react";
 import { AppWrap } from "../../Wrapper";
-// import images from "../../Constants/images";
-import experiencesBg from "../../Assets/SkillsBg.jpg";
+import images from "../../Constants/images";
+// import experiencesBg from "../../Assets/SkillsBg.jpg";
 const Experiences = () => {
   return (
     <div
       className="app__flex pb-32 flex-col relative bg-cover bg-repeat pt-32 min-h-[100vh]"
-      style={{ backgroundImage: `url(${experiencesBg})` }}
+      style={{ backgroundImage: `url(${images.SkillsBg})` }}
       id="experiences"
     >
       <div className="absolute top-0 left-0 w-full h-full bg-[#303030]/50 z-0 backdrop-blur-sm" />
