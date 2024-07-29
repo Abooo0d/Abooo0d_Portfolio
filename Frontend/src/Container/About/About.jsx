@@ -3,7 +3,7 @@ import { client } from "../../client.js";
 import { AboutCard } from "../../Components/index.js";
 import { AppWrap } from "../../Wrapper/index.js";
 import images from "../../Constants/images.js";
-import aboutBg from "../../Assets/workBg.jpg";
+// import aboutBg from "../../Assets/workBg.jpg";
 const About = () => {
   const [about, setAbout] = useState([]);
   useEffect(() => {
@@ -13,7 +13,7 @@ const About = () => {
   return (
     <div
       className="flex flex-col bg-aboutBgs bg-cover bg-repeat w-full pt-8 min-h-[100vh] justify-center items-center py-8 relative "
-      style={{ backgroundImage: `url(${aboutBg})` }}
+      style={{ backgroundImage: `url(${images.workBg})` }}
     >
       <div className="h-[150px] overflow-hidden w-full absolute z-10 top-0 md:block hidden">
         <svg

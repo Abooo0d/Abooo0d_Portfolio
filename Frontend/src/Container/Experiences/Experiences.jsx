@@ -1,6 +1,6 @@
 import React from "react";
 import { AppWrap } from "../../Wrapper";
-import images from "../../Constants/images";
+// import images from "../../Constants/images";
 import experiencesBg from "../../Assets/SkillsBg.jpg";
 const Experiences = () => {
   return (

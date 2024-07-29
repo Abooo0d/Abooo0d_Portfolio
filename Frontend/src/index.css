@@ -42,7 +42,7 @@
   display: flex;
   flex-direction: row;
 }
-.work-bg {
+/* .work-bg {
   background-image: url(./Assets//aboutBg.jpg);
 }
 .header-bg {
@@ -53,7 +53,7 @@
 }
 .experiences-bg {
   background-image: url(./Assets//SkillsBg.jpg);
-}
+} */
 @layer utilities {
   .app__flex {
     @apply flex justify-center items-center;

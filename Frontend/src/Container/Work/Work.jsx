@@ -5,7 +5,6 @@ import { AppWrap } from "../../Wrapper";
 import { urlFor, client } from "../../client";
 import { WorkCard } from "../../Components/index";
 import images from "../../Constants/images";
-import workBg from "../../Assets/aboutBg.jpg";
 import "../../index.css";
 const Work = () => {
   const handelWorkFilter = () => {};
@@ -24,7 +23,7 @@ const Work = () => {
   return (
     <div
       className=" relative work-backgrounds bg-cover bg-repeat min-h-[100vh] min-w-full z-10"
-      style={{ backgroundImage: `url(${workBg})` }}
+      style={{ backgroundImage: `url(${images.aboutBg})` }}
     >
       <div
         className={"absolute top-0 left-0 right-0 bottom-0 bg-black/50  z-0"}

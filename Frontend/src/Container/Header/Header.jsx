@@ -1,12 +1,11 @@
 import { motion } from "framer-motion";
 import images from "../../Constants/images";
 import { AppWrap } from "../../Wrapper/index.js";
-import headerBg from "../../Assets/bgIMG.png";
 const Header = () => {
   return (
     <div
       className={`min-h-[100vh] gap-[20px] max-h-[100vh] scroll app__header flex items-center justify-start md:justify-center relative bg-cover bg-repeat bg-center flex-1 w-[100%] flex-col md:flex-row px-8 py-4 pt-24  `}
-      style={{ backgroundImage: `url(${headerBg})` }}
+      style={{ backgroundImage: `url(${images.homeBg})` }}
     >
       <div className="absolute  w-[200px] h-[200px] top-[-40px] left-[-40px] bg-gradient-to-b from-cu-white to-cu-primary blur-[120px] " />
       <div className="flex-[0.60] mb-[50px]">
