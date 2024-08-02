@@ -5,7 +5,7 @@ import { skills } from "../../Constants/skillsArray";
 const Skills = () => {
   return (
     <div
-      className="relative  flex flex-col justify-start items-center pt-[65px] pb-[40px]"
+      className="relative flex flex-col justify-start items-center pt-[65px] pb-[40px]"
       id="skills"
     >
       <div className="absolute w-[400px] h-[80px] top-[90px] left-0 bg-gradient-to-b from-cu-white to-cu-primary blur-[120px] " />
@@ -25,6 +25,7 @@ const Skills = () => {
             key={index}
             border={skill.border}
             name={skill.name}
+            bgColor={skill.bgColor}
           />
         ))}
       </div>

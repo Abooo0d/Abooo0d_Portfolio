@@ -9,6 +9,7 @@ export const skills = [
     shadow: "hover:shadow-[0px_0px_35px_20px_#0284c7]",
     border: "border-sky-500",
     name: "React",
+    bgColor: "bg-sky-500",
   },
   {
     icon: DiJavascript1,
@@ -16,6 +17,7 @@ export const skills = [
     shadow: "hover:shadow-[0px_0px_35px_20px_#eab308]",
     border: "border-yellow-500",
     name: "Javascript",
+    bgColor: "bg-yellow-500",
   },
   {
     icon: FaLaravel,
@@ -23,6 +25,7 @@ export const skills = [
     shadow: "hover:shadow-[0px_0px_35px_20px_#dc2626]",
     border: "border-red-500",
     name: "Laravel",
+    bgColor: "bg-red-500",
   },
   {
     icon: FaPhp,
@@ -30,6 +33,7 @@ export const skills = [
     shadow: "hover:shadow-[0px_0px_35px_20px_#6b21a8]",
     border: "border-purple-500",
     name: "PHP",
+    bgColor: "bg-purple-500",
   },
   {
     icon: FaSass,
@@ -37,6 +41,7 @@ export const skills = [
     shadow: "hover:shadow-[0px_0px_35px_20px_#ec4899]",
     border: "border-pink-500",
     name: "Sass",
+    bgColor: "bg-pink-500",
   },
   {
     icon: RiTailwindCssFill,
@@ -44,6 +49,7 @@ export const skills = [
     shadow: "hover:shadow-[0px_0px_35px_20px_#0284c7]",
     border: "border-sky-500",
     name: "Tailwind",
+    bgColor: "bg-sky-500",
   },
   {
     icon: FaGithub,
@@ -51,5 +57,6 @@ export const skills = [
     shadow: "hover:shadow-[0px_0px_35px_20px_#333]",
     border: "border-gray-800",
     name: "Github",
+    bgColor: "bg-gray-500",
   },
 ];

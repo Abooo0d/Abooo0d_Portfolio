@@ -4,7 +4,7 @@ import { AppWrap } from "../../Wrapper/index.js";
 const Header = () => {
   return (
     <div
-      className={`min-h-[100vh] gap-[20px] max-h-[100vh] scroll app__header flex items-center justify-start md:justify-center relative bg-cover bg-repeat bg-center flex-1 w-[100%] flex-col md:flex-row px-8 py-4 pt-24  bg-[url(./Assets/bgIMG.png)]`}
+      className={`min-h-[100vh] gap-[20px] max-h-[100vh] scroll app__header flex items-center justify-start md:justify-center relative bg-cover bg-repeat bg-center flex-1 w-[100%] flex-col md:flex-row px-8 py-4 pt-24  bg-[url(./public/bgIMG.png)]`}
     >
       <div className="absolute  w-[200px] h-[200px] top-[-40px] left-[-40px] bg-gradient-to-b from-cu-white to-cu-primary blur-[120px] " />
       <div className="flex-[0.60] mb-[50px]">

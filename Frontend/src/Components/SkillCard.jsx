@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-const SkillCard = ({ Icon, color, index, shadow, border, name }) => {
+const SkillCard = ({ Icon, color, index, shadow, border, name, bgColor }) => {
+  console.log(bgColor);
   return (
     <motion.div
       // variants={scaleVariants}
@@ -9,8 +10,14 @@ const SkillCard = ({ Icon, color, index, shadow, border, name }) => {
       transition={{ duration: index * 0.2 + 0.5, type: "twin" }}
     >
       <div
-        className={`group w-[100px] h-[100px] app__flex border-[1px] border-solid ${border} rounded-full cursor-pointer bg-cu-white hover:bg-gray-100 duration-300 ${shadow} hover:scale-110 z-10`}
+        className={`relative overflow-hidden group w-[100px] h-[100px] app__flex border-[1px] border-solid ${border} rounded-full cursor-pointer bg-cu-white hover:bg-gray-100 duration-300 ${shadow} hover:scale-110 z-10`}
       >
+        <div
+          className={`group-hover:left-[240px] absolute w-[20px] h-[100%] ${bgColor} left-[-50px] top-0 skew-x-[30deg] duration-[1.5s] opacity-30`}
+        />
+        <div
+          className={`group-hover:left-[220px] absolute w-[5px] h-[100%] ${bgColor} left-[-60px] top-0 skew-x-[30deg] duration-[1.5s] opacity-30`}
+        />
         <Icon className={`w-[60%] h-[60%] ${color}`} />
       </div>
       <span

@@ -42,18 +42,6 @@
   display: flex;
   flex-direction: row;
 }
-/* .work-bg {
-  background-image: url(./Assets//aboutBg.jpg);
-}
-.header-bg {
-  background-image: url(./Assets//bgIMG.png);
-}
-.about-bg {
-  background-image: url(./Assets//workBg.jpg);
-}
-.experiences-bg {
-  background-image: url(./Assets//SkillsBg.jpg);
-} */
 @layer utilities {
   .app__flex {
     @apply flex justify-center items-center;
