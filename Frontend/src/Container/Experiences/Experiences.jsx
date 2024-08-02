@@ -1,11 +1,12 @@
 import React from "react";
-import { AppWrap } from "../../Wrapper";
-import images from "../../Constants/images";
 // import experiencesBg from "../../Assets/SkillsBg.jpg";
+import image from "/public/experiencesBg.jpg";
+
 const Experiences = () => {
+  console.log(image);
   return (
     <div
-      className="app__flex pb-32 flex-col relative bg-cover bg-repeat pt-32 min-h-[100vh]  bg-[url(./public/experiencesBg.jpg)]"
+      className={`app__flex pb-32 flex-col relative bg-cover bg-repeat pt-32 min-h-[100vh]  bg-[url(/src/Assets/experiencesBg.jpg)]`}
       id="experiences"
     >
       <div className="absolute top-0 left-0 w-full h-full bg-[#303030]/50 z-0 backdrop-blur-sm" />
