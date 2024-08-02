@@ -10,7 +10,7 @@ const About = () => {
   }, []);
   return (
     <div
-      className={`flex flex-col bg-cover bg-repeat w-full pt-8 min-h-[100vh] justify-center items-center py-8 relative bg-[url(/src/Assets/experiencesBg.jpg)]`}
+      className={`flex flex-col bg-cover bg-repeat w-full pt-8 min-h-[100vh] justify-center items-center py-8 relative bg-[url(/src/Assets/image1.jpg)]`}
     >
       <div className="h-[150px] overflow-hidden w-full absolute z-10 top-0 md:block hidden">
         <svg

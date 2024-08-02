@@ -2,10 +2,8 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { AppWrap } from "../../Wrapper";
-import { urlFor, client } from "../../client";
+import { client } from "../../client";
 import { WorkCard } from "../../Components/index";
-import images from "../../Constants/images";
-import image from "/public/workBg.jpg";
 import "../../index.css";
 const Work = () => {
   const handelWorkFilter = () => {};
@@ -23,7 +21,7 @@ const Work = () => {
   const [activeCard, setActiveCard] = useState(0);
   return (
     <div
-      className={`relative work-backgrounds bg-cover bg-repeat min-h-[100vh] min-w-full z-10 bg-[url(/src/Assets/experiencesBg.jpg)]`}
+      className={`relative work-backgrounds bg-cover bg-repeat min-h-[100vh] min-w-full z-10 bg-[url(/src/Assets/image2.jpg)]`}
     >
       <div
         className={"absolute top-0 left-0 right-0 bottom-0 bg-black/50  z-0"}
