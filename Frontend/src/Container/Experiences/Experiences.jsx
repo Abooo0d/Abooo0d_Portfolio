@@ -1,9 +1,6 @@
 import React from "react";
-// import experiencesBg from "../../Assets/SkillsBg.jpg";
-import image from "/public/experiencesBg.jpg";
 
 const Experiences = () => {
-  console.log(image);
   return (
     <div
       className={`app__flex pb-32 flex-col relative bg-cover bg-repeat bg-fixed pt-32 min-h-[100vh] bg-[url(/src/Assets/experiencesBg.jpg)]`}

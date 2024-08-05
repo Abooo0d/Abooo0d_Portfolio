@@ -1,10 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 const SkillCard = ({ Icon, color, index, shadow, border, name, bgColor }) => {
-  console.log(bgColor);
   return (
     <motion.div
-      // variants={scaleVariants}
       whileInView={{ opacity: [0, 1], x: [-100, 50, -20, 0] }}
       className="skills__con relative w-fit group"
       transition={{ duration: index * 0.2 + 0.5, type: "twin" }}
@@ -23,7 +21,6 @@ const SkillCard = ({ Icon, color, index, shadow, border, name, bgColor }) => {
       <span
         className={`absolute bottom-[-40px] left-[50%] rounded-md px-[4px] py-[2px] bg-gray-100 border-solid border-[2px] ${border} opacity-0 group-hover:opacity-100 duration-300 ${color} skill-tag group-hover:skill-tag-hover z-[8] group-hover:z-10`}
       >
-        {" "}
         {name}
       </span>
     </motion.div>
