@@ -286,18 +286,19 @@
 .work-bg {
   background-attachment: fixed;
 }
-.curved {
+.separator {
   position: absolute;
   width: 100%;
   height: 300px;
   transform-origin: left top;
   transform: skewY(-7deg);
 }
-.curved.top {
-  top: 0;
+.separator-top {
   background: rgb(31, 15, 47);
 }
-.curved.bottom {
-  bottom: -240px;
+.separator-bottom {
   background: #edf2f8;
+}
+.aboutCard-img-overlay {
+  transform: translate(-50%, -50%);
 }

@@ -10,11 +10,14 @@ const SkillCard = ({ Icon, color, index, shadow, border, name, bgColor }) => {
       <div
         className={`relative overflow-hidden group w-[100px] h-[100px] app__flex border-[1px] border-solid ${border} rounded-full cursor-pointer bg-cu-white hover:bg-gray-100 duration-300 ${shadow} hover:scale-110 z-10`}
       >
-        <div
+        {/* <div
           className={`group-hover:left-[240px] absolute w-[20px] h-[100%] ${bgColor} left-[-50px] top-0 skew-x-[30deg] duration-[1.5s] opacity-30`}
         />
         <div
           className={`group-hover:left-[220px] absolute w-[5px] h-[100%] ${bgColor} left-[-60px] top-0 skew-x-[30deg] duration-[1.5s] opacity-30`}
+        /> */}
+        <div
+          className={`absolute top-[50%] left-[50%] aboutCard-img-overlay ${bgColor} group-hover:animate-flash w-0 h-0 rounded-full z-10`}
         />
         <Icon className={`w-[60%] h-[60%] ${color}`} />
       </div>

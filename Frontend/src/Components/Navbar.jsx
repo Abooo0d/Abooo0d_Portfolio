@@ -9,7 +9,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const variants = {
     open: { opacity: 1, x: 0 },
-    closed: { opacity: 0, x: "100%" },
+    closed: { opacity: 0, zIndex: -10, x: -50 },
   };
   return (
     <>
@@ -46,7 +46,7 @@ const Navbar = () => {
           <motion.div
             animate={toggle ? "open" : "closed"}
             variants={variants}
-            className=" shadow-lg rounded-bl-2xl fixed top-0 bottom-0 right-0 z-10 p-4 w-[400px] max-w-[100%] h-[40vh] flex justify-start items-start flex-col bg-cu-white bg-menuBg bg-repeat bg-cover "
+            className=" shadow-lg rounded-bl-2xl fixed top-0 bottom-0 right-0 z-10 p-4 w-[350px] max-w-[100%] h-[40vh] flex justify-start items-start flex-col bg-cu-white bg-menuBg bg-repeat bg-cover "
           >
             <IoCloseCircleOutline
               onClick={() => {

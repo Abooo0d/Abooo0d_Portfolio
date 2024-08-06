@@ -1,25 +1,32 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { urlFor } from "../client";
 const TestimonialCard = ({ test }) => {
   return (
     <motion.div
-      className="relative max-w-[500px] w-[500px] h-[300px] flex flex-col rounded-lg bg-cu-white p-8 shadow-md cursor-pointer border-b-[2px] group"
+      className="relative w-full h-[300px] flex flex-col rounded-lg bg-cu-white p-8 shadow-md cursor-pointer border-b-[2px] group"
       whileInView={{ y: [-30, 20, -10, 0], opacity: [0, 20, 50, 70, 90, 100] }}
       transition={{ delay: 0.2, ease: "easeIn", duration: 0.4 }}
     >
       <div className="flex justify-start items-centers h-full">
-        <div className="w-[120px] h-[120px]">
+        <div className="md:w-[120px] md:h-[120px] w-[100px] h-[100px]">
           <img
-            src={test.imgurl}
+            src={urlFor(test.imgurl)}
             alt={test.name}
-            className="w-[100px] h-[100px] object-cover rounded-full"
+            className="md:w-[100px] md:h-[100px] h-[80px] w-[80px] object-cover rounded-full"
           />
         </div>
         <div className="flex-1 flex flex-col justify-between items-start h-full">
-          <p className="text-[15px] text-gray-800 mb-2">{test.feedback}</p>
+          <p className="text-[14px] md:text-[15px] text-gray-800 mb-2">
+            {test.feedback}
+          </p>
           <div>
-            <h4 className="text-cu-primary font-bold m-0">{test.name}</h4>
-            <h4 className="text-cu-primary">{test.company}</h4>
+            <h4 className="text-cu-primary font-bold m-0 md:text-[15px] text-[14px]">
+              {test.name}
+            </h4>
+            <h4 className="text-cu-primary md:text-[15px] text-[14px]">
+              {test.company}
+            </h4>
           </div>
         </div>
       </div>

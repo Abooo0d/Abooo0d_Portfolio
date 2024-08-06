@@ -32,6 +32,16 @@ export default {
       screens: {
         xs: "475px",
       },
+      keyframes: {
+        flash: {
+          "0%, 40%": { opacity: "0.3" },
+          "50%": { opacity: "0", width: "200%", height: "200%" },
+          "100%": { opacity: "0" },
+        },
+      },
+      animation: {
+        flash: "flash 0.8s linear",
+      },
     },
   },
   plugins: [],

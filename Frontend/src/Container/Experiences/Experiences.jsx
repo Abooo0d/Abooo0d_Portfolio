@@ -7,7 +7,7 @@ const Experiences = () => {
       id="experiences"
     >
       <div className="absolute top-0 left-0 w-full h-full bg-[#303030]/50 z-0 backdrop-blur-sm" />
-      <div className="curved top" />
+      <div className="separator-top separator top-[-100px] md:top-[-50px]" />
       <h2 className="text-xl md:text-2xl text-cu-white text-center font-bold z-10 leading-9 mb-8">
         My
         <span className={"text-cu-white bg-cu-primary rounded-md px-2  ml-1"}>
@@ -23,7 +23,7 @@ const Experiences = () => {
         collaborate with experienced teams.
       </h1>
 
-      <div class="curved bottom" />
+      <div className="separator-bottom separator bottom-[-240px]" />
     </div>
   );
 };

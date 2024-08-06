@@ -20,7 +20,7 @@ const WorkCard = ({ work, active, index, setActive }) => {
         <div className="w-[50px] h-[50px] absolute bg-transparent top-0 right-[-50px] border-cu-primary border-[25px] border-r-transparent" />
       </h4>
       <div
-        className={`relative duration-300 group flex-1 h-[300px] max-h-[300px] ${
+        className={`relative duration-300 group flex-1 h-[300px] max-h-[300px] duration-300 ${
           active ? "opacity-100" : "opacity-0"
         } `}
       >
@@ -52,31 +52,34 @@ const WorkCard = ({ work, active, index, setActive }) => {
           </a>
         </div>
       </div>
-      {active ? (
-        <div
-          className={` h-full flex max-w-full w-[580px] mt-2 max-h-full overflow-hidden${
-            active ? " opacity-100  flex-col justify-between" : "opacity-0"
-          }`}
-        >
-          <p className="text-cu-white mt-2 max-h-[80px] text-[15px]">
-            {work.description}
-          </p>
-          <div className="flex justify-start items-start w-full gap-[10px]">
-            {work.tags.map((tag, index) => (
-              <p
-                className="py-1 rounded-md bg-cu-primary text-cu-white w-[60px] flex justify-center items-center"
-                key={index}
-              >
-                {tag}
-              </p>
-            ))}
-          </div>
-        </div>
-      ) : (
-        <p className="p-1 rounded-md bg-cu-primary text-cu-white absolute right-[10px] md:bottom-[10px] w-[60px] flex justify-center items-center">
-          {work.tags[0]}
+
+      <div
+        className={` h-full flex max-w-full w-[580px] mt-2 max-h-full overflow-hidden duration-300${
+          active ? " opacity-100 flex-col justify-between" : " opacity-0"
+        }`}
+      >
+        <p className="text-cu-white mt-2 max-h-[80px] text-[15px]">
+          {work.description}
         </p>
-      )}
+        <div className="flex justify-start items-start w-full gap-[10px]">
+          {work.tags.map((tag, index) => (
+            <p
+              className="py-1 rounded-md bg-cu-primary text-cu-white w-[60px] flex justify-center items-center"
+              key={index}
+            >
+              {tag}
+            </p>
+          ))}
+        </div>
+      </div>
+
+      <p
+        className={`p-1 rounded-md bg-cu-primary text-cu-white absolute left-[10px] md:bottom-[10px] w-[60px] flex justify-center items-center ${
+          active ? "opacity-0" : "opacity-100"
+        }`}
+      >
+        {work.tags[0]}
+      </p>
     </div>
   );
 };

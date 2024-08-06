@@ -29,7 +29,7 @@ const Skills = () => {
           />
         ))}
       </div>
-      <div class="spikes bottom-0 rotate-180 navy" />
+      <div className="spikes bottom-0 rotate-180 navy" />
     </div>
   );
 };

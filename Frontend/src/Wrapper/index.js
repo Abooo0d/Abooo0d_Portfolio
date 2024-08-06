@@ -1,1 +1,1 @@
-export {default as AppWrap} from './AppWrap.jsx';
+export { default as AppWrap } from "./AppWrap.jsx";

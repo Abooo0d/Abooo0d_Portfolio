@@ -24,9 +24,8 @@ const About = () => {
           ></path>
         </svg>
       </div>
-      <div className="absolute top-0 left-0 right-0 bottom-0 bg-gray-400 opacity-[0.4] z-0" />
+      <div className="absolute top-0 left-0 right-0 bottom-0 bg-gray-400/50 backdrop-blur-[5px] z-0" />
       <div className="flex justify-center items-center flex-col gap-[5px]">
-        {" "}
         <h2 className="text-xl md:text-2xl text-cu-white text-center font-bold z-10 leading-9">
           I know That
           <span className={"text-cu-white bg-cu-primary rounded-md px-2  ml-1"}>
@@ -48,7 +47,7 @@ const About = () => {
           <AboutCard about={about} key={index} order={index} />
         ))}
       </div>
-      <div class="spikes bottom-0 rotate-180 gray" />
+      <div className="spikes bottom-0 rotate-180 gray" />
     </div>
   );
 };
