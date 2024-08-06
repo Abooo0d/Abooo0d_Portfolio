@@ -3,7 +3,7 @@ import React from "react";
 const Experiences = () => {
   return (
     <div
-      className={`app__flex pb-32 flex-col relative bg-cover bg-repeat bg-fixed pt-32 min-h-[100vh] bg-[url(/src/Assets/experiencesBg.jpg)]`}
+      className={`app__flex pb-32 flex-col relative bg-cover bg-repeat bg-fixed pt-32 min-h-[100vh] bg-center bg-[url(/src/Assets/experiencesBg.jpg)]`}
       id="experiences"
     >
       <div className="absolute top-0 left-0 w-full h-full bg-[#303030]/50 z-0 backdrop-blur-sm" />
@@ -22,7 +22,6 @@ const Experiences = () => {
         actively seeking opportunities to contribute to innovative projects and
         collaborate with experienced teams.
       </h1>
-
       <div className="separator-bottom separator bottom-[-240px]" />
     </div>
   );

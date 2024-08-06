@@ -64,7 +64,7 @@
 }
 ::-webkit-scrollbar-thumb {
   width: 5px;
-  background-color: #1e3a8a;
+  background-color: rgb(147 51 234);
 }
 .app__wrapper {
   flex: 1;
@@ -294,11 +294,35 @@
   transform: skewY(-7deg);
 }
 .separator-top {
-  background: rgb(31, 15, 47);
+  background: linear-gradient(
+    187deg,
+    rgba(31, 15, 47, 1) 46%,
+    rgba(76, 30, 132, 1) 100%,
+    rgba(147, 51, 234, 1) 100%
+  );
 }
 .separator-bottom {
   background: #edf2f8;
 }
 .aboutCard-img-overlay {
   transform: translate(-50%, -50%);
+}
+.custom-shape-divider-top-1722951617 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1722951617 svg {
+  position: relative;
+  display: block;
+  width: calc(116% + 1.3px);
+  height: 136px;
+}
+
+.custom-shape-divider-top-1722951617 .shape-fill {
+  fill: #ecf1f8;
 }

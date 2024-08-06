@@ -20,10 +20,10 @@ const Testimonial = () => {
     });
   }, []);
   return (
-    <div className="app__flex flex-col min-h-[100vh] p-20 pt-4 relative w-full">
-      <div className="absolute w-[150px] h-[300px] top-[250px] right-[200px] bg-gradient-to-b from-cu-white to-indigo-600 blur-[200px] z-[-1] " />
-      <div className="absolute w-[100px] h-[150px] top-[150px] right-0 bg-gradient-to-b from-cu-white to-emerald-600 blur-[200px] z-[-1] " />
-      <h2 className="text-xl md:text-2xl text-cu-primary text-center font-bold z-10 leading-9">
+    <div className="app__flex flex-col min-h-[100vh] p-20 pt-4 relative w-full z-10">
+      <div className="absolute w-[150px] h-[300px] top-[150px] right-[200px] bg-gradient-to-b from-cu-white to-indigo-600 blur-[100px] z-[-1] " />
+      <div className="absolute w-[100px] h-[150px] top-[150px] right-0 bg-gradient-to-b from-cu-white to-emerald-600 blur-[80px] z-[-1] " />
+      <h2 className="text-xl md:text-2xl text-cu-primary text-center font-bold z-10 leading-9 mb-4">
         My
         <span className={"text-cu-white bg-cu-primary rounded-md px-2  ml-1"}>
           Testimonials
@@ -124,4 +124,4 @@ const Testimonial = () => {
   );
 };
 
-export default AppWrap(Testimonial, "Testimonials");
+export default AppWrap(Testimonial, "testimonials");
