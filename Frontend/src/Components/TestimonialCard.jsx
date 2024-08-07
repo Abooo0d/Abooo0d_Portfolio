@@ -9,15 +9,15 @@ const TestimonialCard = ({ test }) => {
       transition={{ delay: 0.2, ease: "easeIn", duration: 0.4 }}
     >
       <div className="flex justify-start items-centers h-full">
-        <div className="md:w-[120px] md:h-[120px] w-[100px] h-[100px]">
+        <div className="md:w-[120px] md:h-[120px] w-[80px] h-[80px]">
           <img
             src={urlFor(test.imgurl)}
             alt={test.name}
-            className="md:w-[100px] md:h-[100px] h-[80px] w-[80px] object-cover rounded-full"
+            className="md:w-[100px] md:h-[100px] h-[70px] w-[70px] object-cover rounded-full"
           />
         </div>
         <div className="flex-1 flex flex-col justify-between items-start h-full">
-          <p className="text-[14px] md:text-[15px] text-gray-800 mb-2">
+          <p className="text-[12px] md:text-[15px] text-gray-800 mb-2 max-h-[80%] overflow-hidden">
             {test.feedback}
           </p>
           <div>

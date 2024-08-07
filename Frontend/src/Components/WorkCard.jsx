@@ -20,18 +20,18 @@ const WorkCard = ({ work, active, index, setActive }) => {
         <div className="w-[50px] h-[50px] absolute bg-transparent top-0 right-[-50px] border-cu-primary border-[25px] border-r-transparent" />
       </h4>
       <div
-        className={`relative duration-300 group flex-1 h-[300px] max-h-[300px] duration-300 ${
+        className={`relative duration-300 group flex-1 h-[300px] max-h-[250px] ${
           active ? "opacity-100" : "opacity-0"
         } `}
       >
-        <div className="w-full max-h-[300px] flex justify-center items-center overflow-hidden rounded-lg">
+        <div className="w-full md:max-h-[300px] max-h-[250px] flex justify-center items-center overflow-hidden rounded-lg">
           <img
             src={urlFor(work.imgUrl)}
             alt="Image"
             className={`min-h-[350px] w-full object-cover`}
           />
         </div>
-        <div className="absolute top-0 left-0 bg-black/50 backdrop-blur-sm rounded-lg w-full h-[300px] opacity-0 group-hover:opacity-100 duration-200 flex justify-center items-center gap-[40px] ">
+        <div className="absolute top-0 left-0 bg-black/50 backdrop-blur-sm rounded-lg w-full h-[250px] opacity-0 group-hover:opacity-100 duration-200 flex justify-center items-center gap-[40px] ">
           {work.projectLink ? (
             <a
               href={work.projectLink}
@@ -58,10 +58,10 @@ const WorkCard = ({ work, active, index, setActive }) => {
           active ? " opacity-100 flex-col justify-between" : " opacity-0"
         }`}
       >
-        <p className="text-cu-white mt-2 max-h-[80px] text-[15px]">
+        <p className="text-cu-white mt-2 max-h-[200px] overflow-hidden text-[15px]">
           {work.description}
         </p>
-        <div className="flex justify-start items-end w-full gap-[10px] h-full">
+        <div className="flex justify-start items-end w-full gap-[10px]  flex-1">
           {work.tags.map((tag, index) => (
             <p
               className="py-1 px-2 rounded-md bg-cu-primary text-cu-white w-fit flex justify-center items-center"

@@ -20,7 +20,7 @@ const Testimonial = () => {
     });
   }, []);
   return (
-    <div className="app__flex flex-col min-h-[100vh] p-20 pt-4 relative w-full z-10">
+    <div className="app__flex flex-col min-h-[100vh] md:p-20 p-4 pt-4 relative w-full z-10">
       <div className="absolute w-[150px] h-[300px] top-[150px] right-[200px] bg-gradient-to-b from-cu-white to-indigo-600 blur-[100px] z-[-1] " />
       <div className="absolute w-[100px] h-[150px] top-[150px] right-0 bg-gradient-to-b from-cu-white to-emerald-600 blur-[80px] z-[-1] " />
       <h2 className="text-xl md:text-2xl text-cu-primary text-center font-bold z-10 leading-9 mb-4">
@@ -36,7 +36,7 @@ const Testimonial = () => {
           transition={{ delay: 0.2, ease: "easeIn" }}
         >
           <div className="app__flex gap-x-4 flex-col md:flex-row">
-            <div className="flex md:hidden justify-between items-center h-[40px] gap-4 mb-2 max-w-[500px] w-[400px] md:w-[500px]">
+            <div className="flex md:hidden justify-between items-center h-[40px] gap-4 mb-2 md:max-w-[500px] w-[90%] max-w-[95%] md:w-[500px]">
               <button
                 className="flex text-3xl justify-center items-center font-bold w-full h-[40px] bg-cu-white/60 text-cu-primary rounded-lg shadow-lg hover:bg-cu-primary hover:text-cu-white duration-200"
                 onClick={() => {
@@ -69,7 +69,7 @@ const Testimonial = () => {
               {"<"}
             </button>
             {testimonials.length > 0 && (
-              <div className="flex justify-center items-center flex-row max-w-[500px] w-[400px] md:w-[500px]">
+              <div className="flex justify-center items-center flex-row md:max-w-[500px] w-[90%] max-w-[95%] md:w-[500px]">
                 <TestimonialCard
                   test={testimonials[activeCard]}
                   key={testimonials[activeCard].name}
@@ -92,10 +92,10 @@ const Testimonial = () => {
               <>
                 <button
                   key={index}
-                  className={` h-[10px] rounded-full duration-200 ${
+                  className={` h-[10px] rounded-full duration-200  ${
                     activeCard === index
                       ? "bg-cu-primary w-[20px] "
-                      : "bg-gray-300 w-[10px] "
+                      : "bg-cu-white border-[1px] w-[10px] "
                   }`}
                   onClick={() => setActiveCard(index)}
                 />
@@ -118,7 +118,7 @@ const Testimonial = () => {
         {brands.map((brand, index) => (
           <div
             key={index}
-            className="md:w-[150px] md:h-[100px] w-[120px] h-[80px] cursor-pointer group border-[2px] border-solid hover:border-cu-white duration-300 hover:shadow-xl rounded-[20px] hover:bg-cu-white/40 p-4"
+            className="md:w-[150px] md:h-[100px] w-[120px] h-[90px] cursor-pointer group border-[2px] border-solid hover:border-cu-white duration-300 hover:shadow-xl rounded-[20px] hover:bg-cu-white/40 p-4"
           >
             <img
               src={urlFor(brand.imgUrl)}
