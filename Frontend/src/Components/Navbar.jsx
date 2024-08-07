@@ -46,7 +46,7 @@ const Navbar = () => {
           <motion.div
             animate={toggle ? "open" : "closed"}
             variants={variants}
-            className=" shadow-lg rounded-bl-2xl fixed top-0 bottom-0 right-0 z-10 p-4 w-[350px] max-w-[100%] h-[40vh] flex justify-start items-start flex-col bg-cu-white bg-menuBg bg-repeat bg-cover "
+            className=" shadow-lg rounded-bl-2xl fixed top-0 bottom-0 right-0 z-10 p-4 w-[350px] max-w-[100%] h-[40vh] flex justify-start items-start flex-col bg-cu-white bg-menuBg bg-repeat bg-cover duration-400 "
           >
             <IoCloseCircleOutline
               onClick={() => {
@@ -54,7 +54,7 @@ const Navbar = () => {
               }}
               className="absolute top-[20px] right-[32px] flex w-[32px] h-[32px] text-cu-primary hover:bg-cu-secondary hover:text-white duration-200 rounded-lg cursor-pointer p-[3px]"
             />
-            <ul className="flex flex-col gap-1 p-4 pt-6 w-[80%]">
+            <ul className="flex flex-col gap-1 p-4 pt-6 w-full">
               {links.map((item, index) => (
                 <div key={`${item}`}>
                   <li

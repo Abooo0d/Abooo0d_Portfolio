@@ -13,13 +13,31 @@ const SocialMedia = () => {
         </a>
       </div>
       <div className="cursor-pointer w-[30px] h-[30px] rounded-full bg-cu-primary/20 border-solid border-cu-primary/40 border-[1px] text-cu-white flex justify-center items-center hover:bg-blue-800 hover:text-cu-white duration-300">
-        <FaLinkedinIn />
+        <a
+          href="https://www.linkedin.com/in/abood-saad-aldeen-877b33295/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaLinkedinIn />
+        </a>
       </div>
       <div className="cursor-pointer w-[30px] h-[30px] rounded-full bg-cu-primary/20 border-solid border-cu-primary/40 border-[1px] text-cu-white flex justify-center items-center hover:bg-pink-600 hover:text-cu-white duration-300">
-        <FaInstagram />
+        <a
+          href="https://www.instagram.com/abed8250/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaInstagram />
+        </a>
       </div>
       <div className="cursor-pointer w-[30px] h-[30px] rounded-full bg-cu-primary/20 border-solid border-cu-primary/40 border-[1px] text-cu-white flex justify-center items-center hover:bg-gray-900 hover:text-cu-white duration-300">
-        <FiGithub />
+        <a
+          href="https://github.com/Abooo0d"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FiGithub />
+        </a>
       </div>
     </div>
   );

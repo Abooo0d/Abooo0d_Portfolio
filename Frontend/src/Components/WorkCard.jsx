@@ -14,7 +14,7 @@ const WorkCard = ({ work, active, index, setActive }) => {
       onClick={() => setActive(index)}
     >
       <h4
-        className={`absolute bg-cu-primary  text-cu-white w-[200px]  md:rotate-90 md:left-[-60px] left-0 top-[15px] md:top-[75px] py-0 px-[20px] h-[50px] flex justify-center items-center z-10`}
+        className={`absolute bg-cu-primary  text-cu-white w-[230px]  md:rotate-90 md:left-[-75px] left-0 top-[15px] md:top-[88px] py-0 px-[20px] h-[50px] flex justify-center items-center z-10`}
       >
         {work.title}
         <div className="w-[50px] h-[50px] absolute bg-transparent top-0 right-[-50px] border-cu-primary border-[25px] border-r-transparent" />
@@ -54,17 +54,17 @@ const WorkCard = ({ work, active, index, setActive }) => {
       </div>
 
       <div
-        className={` h-full flex max-w-full w-[580px] mt-2 max-h-full overflow-hidden duration-300${
+        className={` h-full flex max-w-full w-[580px] mt-2 max-h-full overflow-hidden duration-300 justify-between${
           active ? " opacity-100 flex-col justify-between" : " opacity-0"
         }`}
       >
         <p className="text-cu-white mt-2 max-h-[80px] text-[15px]">
           {work.description}
         </p>
-        <div className="flex justify-start items-start w-full gap-[10px]">
+        <div className="flex justify-start items-end w-full gap-[10px] h-full">
           {work.tags.map((tag, index) => (
             <p
-              className="py-1 rounded-md bg-cu-primary text-cu-white w-[60px] flex justify-center items-center"
+              className="py-1 px-2 rounded-md bg-cu-primary text-cu-white w-fit flex justify-center items-center"
               key={index}
             >
               {tag}

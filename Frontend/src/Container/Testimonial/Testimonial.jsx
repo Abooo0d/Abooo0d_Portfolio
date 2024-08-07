@@ -29,15 +29,37 @@ const Testimonial = () => {
           Testimonials
         </span>
       </h2>
-      <motion.div
-        className="app__flex  flex-col h-full"
-        whileInView={{ y: [-50, 0], opacity: [0, 100] }}
-        transition={{ delay: 0.2, ease: "easeIn" }}
-      >
-        <div className="app__flex gap-x-4 flex-col md:flex-row">
-          <div className="flex md:hidden justify-between items-center h-[40px] gap-4 mb-2 max-w-[500px] w-[400px] md:w-[500px]">
+      {testimonials.length > 0 ? (
+        <motion.div
+          className="app__flex  flex-col h-full"
+          whileInView={{ y: [-50, 0], opacity: [0, 100] }}
+          transition={{ delay: 0.2, ease: "easeIn" }}
+        >
+          <div className="app__flex gap-x-4 flex-col md:flex-row">
+            <div className="flex md:hidden justify-between items-center h-[40px] gap-4 mb-2 max-w-[500px] w-[400px] md:w-[500px]">
+              <button
+                className="flex text-3xl justify-center items-center font-bold w-full h-[40px] bg-cu-white/60 text-cu-primary rounded-lg shadow-lg hover:bg-cu-primary hover:text-cu-white duration-200"
+                onClick={() => {
+                  setActiveCard(
+                    activeCard !== 0 ? activeCard - 1 : testimonials.length - 1
+                  );
+                }}
+              >
+                {"<"}
+              </button>
+              <button
+                className="flex text-3xl font-bold justify-center items-center w-full h-[40px] bg-cu-white/60 text-cu-primary rounded-lg shadow-lg hover:bg-cu-primary hover:text-cu-white duration-200"
+                onClick={() => {
+                  setActiveCard(
+                    activeCard !== testimonials.length - 1 ? activeCard + 1 : 0
+                  );
+                }}
+              >
+                {">"}
+              </button>
+            </div>
             <button
-              className="flex text-3xl justify-center items-center font-bold w-full h-[40px] bg-cu-white/60 text-cu-primary rounded-lg shadow-lg hover:bg-cu-primary hover:text-cu-white duration-200"
+              className="hidden md:flex justify-center items-center text-3xl font-bold w-[40px] h-[100px] bg-cu-white/60 text-cu-primary rounded-lg shadow-lg hover:bg-cu-primary hover:text-cu-white duration-200"
               onClick={() => {
                 setActiveCard(
                   activeCard !== 0 ? activeCard - 1 : testimonials.length - 1
@@ -46,8 +68,16 @@ const Testimonial = () => {
             >
               {"<"}
             </button>
+            {testimonials.length > 0 && (
+              <div className="flex justify-center items-center flex-row max-w-[500px] w-[400px] md:w-[500px]">
+                <TestimonialCard
+                  test={testimonials[activeCard]}
+                  key={testimonials[activeCard].name}
+                />
+              </div>
+            )}
             <button
-              className="flex text-3xl font-bold justify-center items-center w-full h-[40px] bg-cu-white/60 text-cu-primary rounded-lg shadow-lg hover:bg-cu-primary hover:text-cu-white duration-200"
+              className="hidden md:flex justify-center items-center text-3xl font-bold w-[40px] h-[100px] bg-cu-white/60 text-cu-primary rounded-lg shadow-lg hover:bg-cu-primary hover:text-cu-white duration-200"
               onClick={() => {
                 setActiveCard(
                   activeCard !== testimonials.length - 1 ? activeCard + 1 : 0
@@ -57,51 +87,29 @@ const Testimonial = () => {
               {">"}
             </button>
           </div>
-          <button
-            className="hidden md:flex justify-center items-center text-3xl font-bold w-[40px] h-[100px] bg-cu-white/60 text-cu-primary rounded-lg shadow-lg hover:bg-cu-primary hover:text-cu-white duration-200"
-            onClick={() => {
-              setActiveCard(
-                activeCard !== 0 ? activeCard - 1 : testimonials.length - 1
-              );
-            }}
-          >
-            {"<"}
-          </button>
-          {testimonials.length > 0 && (
-            <div className="flex justify-center items-center flex-row max-w-[500px] w-[400px] md:w-[500px]">
-              <TestimonialCard
-                test={testimonials[activeCard]}
-                key={testimonials[activeCard].name}
-              />
-            </div>
-          )}
-          <button
-            className="hidden md:flex justify-center items-center text-3xl font-bold w-[40px] h-[100px] bg-cu-white/60 text-cu-primary rounded-lg shadow-lg hover:bg-cu-primary hover:text-cu-white duration-200"
-            onClick={() => {
-              setActiveCard(
-                activeCard !== testimonials.length - 1 ? activeCard + 1 : 0
-              );
-            }}
-          >
-            {">"}
-          </button>
+          <div className="w-[150px] h-[50px] app__flex gap-x-2">
+            {testimonials.map((test, index) => (
+              <>
+                <button
+                  key={index}
+                  className={` h-[10px] rounded-full duration-200 ${
+                    activeCard === index
+                      ? "bg-cu-primary w-[20px] "
+                      : "bg-gray-300 w-[10px] "
+                  }`}
+                  onClick={() => setActiveCard(index)}
+                />
+              </>
+            ))}
+          </div>
+        </motion.div>
+      ) : (
+        <div className="w-[400px] h-[400px] flex justify-center items-center ">
+          <h1 className="text-xl text-cu-white/80 font-bold flex justify-center items-center gap-2 bg-cu-primary/20 py-4 px-8 rounded-md border-[1px] border-solid border-cu-primary cursor-default">
+            There Is No Testimonials Yet
+          </h1>
         </div>
-        <div className="w-[150px] h-[50px] app__flex gap-x-2">
-          {testimonials.map((test, index) => (
-            <>
-              <button
-                key={index}
-                className={` h-[10px] rounded-full duration-200 ${
-                  activeCard === index
-                    ? "bg-cu-primary w-[20px] "
-                    : "bg-gray-300 w-[10px] "
-                }`}
-                onClick={() => setActiveCard(index)}
-              />
-            </>
-          ))}
-        </div>
-      </motion.div>
+      )}
       <motion.div
         whileInView={{ y: [-50, 0], opacity: [0, 100] }}
         transition={{ delay: 0.2, ease: "easeIn" }}

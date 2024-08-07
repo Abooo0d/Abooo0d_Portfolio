@@ -8,7 +8,7 @@ const Skills = () => {
       className="relative flex flex-col justify-start items-center pt-[65px] pb-[40px]"
       id="skills"
     >
-      <div className="absolute w-[400px] h-[80px] top-[90px] left-0 bg-gradient-to-b from-cu-white to-cu-primary blur-[120px] " />
+      <div className="absolute md:w-[400px] md:h-[80px] w-[100px] h-[100px] top-[90px] md:left-0 left-[100px] bg-gradient-to-b from-cu-white to-cu-primary md:blur-[120px] blur-[60px] " />
       <h2 className="text-xl md:text-2xl text-cu-primary text-center font-bold z-10 leading-9 relative">
         My
         <span className={"text-cu-white bg-cu-primary rounded-md px-2  ml-1"}>
